@@ -1,3 +1,25 @@
+## 🌐 Live Demo
+
+ # Landing Page
+**https://skymetrics-5tmg.onrender.com/**
+
+**⚠️ Warning: The landing page currently provides access to the User Section only. The Government Section must be accessed through its separate URL provided under login section.**
+ 
+## Login
+ 
+The app has two login options:
+ 
+- **User Login**
+- https://skymetrics-5tmg.onrender.com/users
+- User email: sky-review-traveller@example.com
+- User password: jeT41tzialrxDGHB6O_ugKI9B_6LLk4r
+<br> <br>
+- **Government Login**
+- https://skymetrics-5tmg.onrender.com/government
+- Government email: sky-review-analyst@example.com
+- Government password: 0NWJxevEDN6czf0YKSEXCij8WpJ-LEtV
+
+
 # SkyMetrics Platform
 
 SkyMetrics is a prototype for exploring **simulated Indian domestic airfare**. The React frontend, Spring Boot API, MySQL schema and data generator are kept in separate folders. See [DEPLOY_REVIEW.md](DEPLOY_REVIEW.md) for the public review deployment.
