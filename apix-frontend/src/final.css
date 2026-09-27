@@ -1,0 +1,252 @@
+/* Final APIx product skin — one visual system, applied after every legacy layer. */
+:root {
+  --apx-ink: #171714;
+  --apx-muted: #68675f;
+  --apx-paper: #f6f3ed;
+  --apx-card: #fffdf9;
+  --apx-line: #ded9cf;
+  --apx-brand: #e85d3f;
+  --apx-brand-dark: #bd3f27;
+  --apx-green: #1f7155;
+  --apx-night: #191b18;
+  --ink: var(--apx-ink);
+  --navy: var(--apx-night);
+  --blue: var(--apx-brand);
+  --blue-dark: var(--apx-brand-dark);
+  --page: var(--apx-paper);
+  --surface: var(--apx-card);
+  --line: var(--apx-line);
+  --muted: var(--apx-muted);
+}
+
+html, body, #root { background: var(--apx-paper); color: var(--apx-ink); }
+body { font-family: 'DM Sans', sans-serif; }
+.app-shell, html[data-theme="dark"] .app-shell { background: var(--apx-paper); }
+.content { max-width: 1200px; padding: 0 28px 80px; }
+
+/* A real website header: brand, navigation and account live on one quiet bar. */
+.sidebar {
+  background: rgba(255,253,249,.96);
+  border-bottom: 1px solid var(--apx-line);
+  box-shadow: 0 1px 0 rgba(20,20,16,.02);
+  backdrop-filter: blur(18px);
+}
+.brand .logo-mark { background: var(--apx-ink); color: #fff; border-radius: 50%; width: 37px; height: 37px; }
+.brand > strong { color: var(--apx-ink); font-size: 22px; letter-spacing: -1px; }
+.brand > strong > span { color: var(--apx-brand); }
+.brand-full { color: var(--apx-ink); border-color: #c8c2b8; font-size: 13px; }
+.sidebar nav button { color: #5c5a53; border-radius: 999px; padding: 10px 14px; font-size: 11px; }
+.sidebar nav button:hover { color: var(--apx-ink); background: #eeeae2; }
+.sidebar nav button.active { color: var(--apx-ink); background: #ebe6dd; }
+.sidebar nav button.active svg { color: var(--apx-brand); }
+.theme-toggle, .profile-trigger { color: var(--apx-ink); background: transparent; border-color: #d5d0c7; border-radius: 999px; }
+.theme-toggle:hover, .profile-trigger:hover, .profile-trigger[aria-expanded="true"] { background: #eeeae2; border-color: #c9c2b8; }
+.profile-trigger svg:first-child, .profile-trigger svg:last-child { color: var(--apx-ink); }
+
+header { height: auto; min-height: 190px; padding: 48px max(28px,calc((100vw - 1144px)/2)) 34px; background: var(--apx-paper); color: var(--apx-ink); align-items: center; }
+.header-copy { max-width: 770px; }
+.page-kicker { display: block; margin-bottom: 12px; color: var(--apx-brand-dark); font: 800 10px 'DM Sans'; letter-spacing: 1.5px; }
+.header-copy h1 { color: var(--apx-ink); font: 800 clamp(34px,4vw,54px)/1.04 'Manrope'; letter-spacing: -2.4px; }
+.header-copy p { max-width: 650px; margin-top: 13px; color: var(--apx-muted); font-size: 14px; line-height: 1.6; }
+
+/* Search is the product focal point. */
+.search-panel { padding: 26px; border: 1px solid var(--apx-line); border-radius: 22px; background: var(--apx-card); color: var(--apx-ink); box-shadow: 0 18px 55px rgba(39,31,20,.08); }
+.search-heading { align-items: end; }
+.search-heading h2 { margin: 4px 0 0; color: var(--apx-ink); font: 800 25px 'Manrope'; letter-spacing: -.8px; }
+.search-heading .eyebrow, .eyebrow { color: var(--apx-brand-dark); }
+.updated { color: var(--apx-muted); font-size: 10px; }
+.search-grid { grid-template-columns: minmax(190px,1fr) 30px minmax(190px,1fr) minmax(210px,.85fr); gap: 10px; margin-top: 19px; padding: 9px; border: 1px solid #d8d3ca; border-radius: 15px; background: #f3efe7; }
+.search-grid label > span { margin: 0 0 5px 4px; color: #78756d; font-size: 8px; letter-spacing: 1.1px; }
+.search-grid label > small { display: none; }
+.airport-field, .date-field { min-height: 59px; padding: 0 14px; border: 1px solid transparent; border-radius: 11px; background: #fffdf9; color: var(--apx-brand-dark); box-shadow: 0 1px 1px rgba(20,20,18,.04); }
+.airport-field:hover, .date-field:hover { border-color: #bdb7ad; }
+.airport-field:focus-within, .date-field:focus-within { border-color: var(--apx-brand); box-shadow: 0 0 0 3px rgba(232,93,63,.13); }
+.airport-field select, .date-field select { background: #fffdf9; color: var(--apx-ink)!important; -webkit-text-fill-color: var(--apx-ink)!important; font: 750 15px 'DM Sans'; }
+.route-line { color: var(--apx-brand); }
+.route-line i { background: #aaa49a; }
+
+/* The map supports the decision instead of dominating the page. */
+.route-map { grid-template-columns: minmax(240px,.72fr) minmax(360px,1.28fr); min-height: 250px; margin-top: 18px; border: 0; border-radius: 16px; background: #22231f; box-shadow: none; }
+.route-map-copy { padding: 30px; background: #22231f; color: #fff; }
+.route-map-copy .eyebrow, .route-map .eyebrow svg { color: #f18a6f; }
+.route-map-copy h3 { color: #fff; font-size: 30px; }
+.route-map-copy h3 b, .route-map-copy > p { color: #aaa99f; }
+.route-map-legend span { color: #dad8cf; }
+.route-map-legend i { border-color: #22231f; box-shadow: 0 0 0 1.5px #fff; }
+.origin-dot { background: #fff; color: #fff; }
+.destination-dot { background: var(--apx-brand); color: var(--apx-brand); }
+.auto-analysis { margin-top: 20px; background: #34352f; border-color: #45463f; color: #f2f0e9; }
+.auto-analysis > i { background: #62c593; }
+.india-map-wrap, .india-map-wrap svg { min-height: 250px; height: 250px; }
+.india-map-wrap { background: #f0ede6; }
+.india-map-wrap:before { background-image: none; }
+.india-outline { fill: #d8d5ce; stroke: #24241f; stroke-width: 2; filter: none; }
+.flight-path { stroke: var(--apx-brand); stroke-width: 3.5; }
+.flight-path-shadow { stroke: rgba(232,93,63,.18); }
+.map-plane circle { fill: #fff; stroke: var(--apx-brand); }
+.map-plane path { fill: var(--apx-brand); }
+.map-marker.origin > circle:not(.marker-ring) { fill: #191a17; }
+.map-marker.destination > circle:not(.marker-ring) { fill: var(--apx-brand); stroke: #fff; }
+.origin .marker-ring { stroke: #191a17; }
+.destination .marker-ring { stroke: var(--apx-brand); }
+
+/* Route atlas uses the same warm charcoal and rust as the homepage map. */
+.route-map { grid-template-columns: minmax(230px,.55fr) minmax(430px,1.45fr); min-height: 420px; background:#233238; }
+.route-map-copy { align-self:stretch; display:flex; flex-direction:column; justify-content:center; background:#26363c; border-right:1px solid #405357; }
+.route-map-copy .eyebrow,.route-map .eyebrow svg { color:#f2ad81; }
+.route-map-copy h3 { max-width:310px; }
+.route-map-copy h3 b,.route-map-copy > p { color:#b8c7c3; }
+.route-map-legend span { color:#e0e8e2; }
+.auto-analysis { background:#34484a; border-color:#506161; }
+.india-map-wrap,.india-map-wrap svg { min-height:420px; height:420px; }
+.india-map-wrap { background:radial-gradient(circle at 48% 48%,#304246 0%,#233238 75%); }
+.india-map-wrap:before { background-image:linear-gradient(#fff7e808 1px,transparent 1px),linear-gradient(90deg,#fff7e808 1px,transparent 1px);background-size:25px 25px; }
+.india-geo { opacity:.84;filter:sepia(.35) saturate(.65) hue-rotate(-23deg) brightness(1.08); }
+.india-outline { fill:url(#indiaFill); stroke:#9fb5ae; stroke-width:1.5; filter:drop-shadow(0 7px 10px #0007); }
+.map-heading{fill:#f3eee6;font:800 11px 'DM Sans';letter-spacing:1.2px}.map-subheading{fill:#aebeb7;font:500 9px 'DM Sans'}
+.map-source{fill:#9aaca5;font:500 6px 'DM Sans'}
+.map-background-routes path{fill:none;stroke:#c8a68e;stroke-width:1.05;opacity:.42}.map-all-nodes circle{fill:#f5c09b;filter:drop-shadow(0 0 4px #f3a777)}.map-all-nodes text{fill:#dfd7c9;stroke:#233238;stroke-width:2.5;paint-order:stroke;font:700 7px 'DM Sans'}
+.flight-path-shadow { stroke:#e58d5c; stroke-width:9;opacity:.28; }.flight-path { stroke:#ffbf91;stroke-width:2.5;stroke-dasharray:none;filter:drop-shadow(0 0 4px #f3a777); }
+.map-marker.origin > circle:not(.marker-ring),.map-marker.destination > circle:not(.marker-ring){fill:#ffe0bf;stroke:#233238;stroke-width:2}.origin .marker-ring,.destination .marker-ring{stroke:#f3a777;opacity:.55}.map-marker text{fill:#fff4e8;stroke:#233238;stroke-width:4;font-size:11px}.map-plane circle{fill:#26373d;stroke:#ffbf91}.map-plane path{fill:#ffbf91}.map-caption{fill:#c9d5cb;font:700 10px 'DM Sans';letter-spacing:.5px}
+.watch-route,.fare-actions button{display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:0 12px;border:1px solid #d7d0c6;border-radius:9px;background:#fffdf9;color:#38352f;font:800 11px 'DM Sans';cursor:pointer}.watch-route:hover,.fare-actions button:hover{border-color:#e85d3f;color:#bd3f27}.watch-route.saved{color:#bd3f27;border-color:#e4b6a9}.fare-actions{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px}.action-notice{position:fixed;z-index:30;right:24px;bottom:24px;display:flex;align-items:center;gap:16px;max-width:350px;padding:13px 16px;border-radius:10px;background:#22231f;color:#fff;box-shadow:0 12px 35px #0003;font-size:12px}.action-notice button{display:grid;place-items:center;border:0;background:none;color:#fff;cursor:pointer}.profile-menu-link{display:flex;align-items:center;gap:9px;width:100%;padding:10px 14px;border:0;background:#fffdf9;color:#22231f;text-align:left;font-size:11px;font-weight:700;cursor:pointer}.profile-menu-link:hover{background:#f2ece3}
+
+/* Results: one clear answer, then supporting evidence. */
+.mode-tabs { gap: 26px; margin: 30px 0 22px; border-color: #d8d2c8; }
+.mode-tabs button { color: #77736b; font-size: 11px; }
+.mode-tabs button:hover, .mode-tabs button.active { color: var(--apx-ink); border-color: var(--apx-brand); }
+.decision-hero { grid-template-columns: 1fr 210px; padding: 34px; border: 0; border-radius: 18px; background: var(--apx-ink); color: #fff; box-shadow: none; }
+.decision-copy h2 { color: #fff; font-size: 32px; }
+.decision-copy > p { color: #c6c3ba; max-width: 650px; }
+.decision-copy p strong, .decision-score b { color: #fff; }
+.decision-copy .eyebrow { color: #f18a6f; }
+.decision-actions .decision-label { background: var(--apx-brand); color: #fff; border-radius: 999px; }
+.decision-actions > span:last-child { color: #bdbab0; }
+.decision-score { border-color: #4a4942; }
+.decision-score > strong { color: #fff; }
+.decision-score small, .decision-score span, .decision-score p { color: #aaa79d; }
+.score-line { background: #45443e; }
+.score-line i { background: var(--apx-brand); }
+.decision-details { grid-template-columns: 1.35fr .65fr; gap: 16px; margin-top: 16px; }
+.card, .stat-card, .gov-panel, .gov-movement, .gov-state { border-color: var(--apx-line); background: var(--apx-card); border-radius: 16px; box-shadow: none; }
+.card { padding: 26px; }
+.card:hover { border-color: #c8c0b4; box-shadow: 0 8px 28px rgba(35,28,18,.05); }
+.card-title h3, .booking-answer > strong, .rank-list span { color: var(--apx-ink); }
+.booking-answer { background: #ece7dd; }
+.booking-icon, .plain-tip svg { color: var(--apx-brand); }
+.plain-tip { background: #f2eee6; color: #5f5d56; }
+.calendar-grid > div, .route-tiles > div { background: #f4f0e8; border-color: #e3ddd3; }
+.calendar-grid > div.cheap, .route-tiles .cool { background: #e4f0e8; border-color: #cfdfd3; }
+.calendar-grid > div.pricey, .route-tiles .hot { background: #fae7e1; border-color: #efd1c7; }
+.time-filters button { background: #fffdf9; border-color: #d8d2c8; color: #625f58; border-radius: 999px; }
+.time-filters button.active { background: var(--apx-ink); border-color: var(--apx-ink); color: #fff; }
+.airline-logo { background: #f5ded7; color: var(--apx-brand-dark); }
+.offer:hover { background: #f7f3ec; }
+
+/* Market and policy pages share the same editorial system. */
+.pulse-hero, .gov-hero { background: #27352d; border-radius: 18px; }
+.pulse-hero .eyebrow, .gov-kicker { color: #f39a80; }
+.pulse-hero > div strong { color: #fff; }
+.pulse-period button.active { background: #fff; color: #27352d; }
+.gov-notice { background: #fff3df; border-color: #ead4ad; }
+.gov-page .rise { color: #ba4932; }
+.gov-page .fall { color: var(--apx-green); }
+.gov-coverage strong { color: var(--apx-brand-dark); }
+.gov-method { background: #ece7dd; border-color: #d8d0c3; }
+
+footer { max-width: 1144px; margin: auto; border-color: var(--apx-line); }
+footer .brand > strong, footer .brand-full { color: var(--apx-ink); }
+footer .logo-mark { background: var(--apx-ink); }
+
+/* Dark mode uses charcoal and warm grey, while form controls remain clear. */
+html[data-theme="dark"] { background: #151613; color-scheme: dark; }
+html[data-theme="dark"] body, html[data-theme="dark"] #root, html[data-theme="dark"] .app-shell { background: #151613; color: #f2eee7; }
+html[data-theme="dark"] .sidebar, html[data-theme="dark"] header { background: #191a17; border-color: #363631; }
+html[data-theme="dark"] .brand > strong, html[data-theme="dark"] .brand-full, html[data-theme="dark"] .header-copy h1 { color: #f4f1ea; }
+html[data-theme="dark"] .sidebar nav button, html[data-theme="dark"] .header-copy p { color: #aaa89f; }
+html[data-theme="dark"] .sidebar nav button.active, html[data-theme="dark"] .sidebar nav button:hover { background: #2d2e29; color: #fff; }
+html[data-theme="dark"] .theme-toggle, html[data-theme="dark"] .profile-trigger { color: #fff; border-color: #44443e; }
+html[data-theme="dark"] .profile-trigger svg:first-child, html[data-theme="dark"] .profile-trigger svg:last-child { color: #fff; }
+html[data-theme="dark"] .search-panel, html[data-theme="dark"] .card, html[data-theme="dark"] .stat-card, html[data-theme="dark"] .gov-panel, html[data-theme="dark"] .gov-movement, html[data-theme="dark"] .gov-state { background: #20211e; border-color: #3b3b35; }
+html[data-theme="dark"] .search-heading h2, html[data-theme="dark"] .card-title h3, html[data-theme="dark"] .rank-list span { color: #f3f0e8; }
+html[data-theme="dark"] .search-grid { background: #171815; border-color: #3a3a35; }
+html[data-theme="dark"] .airport-field, html[data-theme="dark"] .date-field, html[data-theme="dark"] .airport-field select, html[data-theme="dark"] .date-field select { background: #f8f5ef; color: #171714!important; -webkit-text-fill-color: #171714!important; }
+html[data-theme="dark"] .booking-answer, html[data-theme="dark"] .gov-method { background: #292a26; }
+html[data-theme="dark"] .plain-tip, html[data-theme="dark"] .calendar-grid > div, html[data-theme="dark"] .route-tiles > div { background: #292a26; border-color: #3c3d37; }
+html[data-theme="dark"] .india-map-wrap { background:radial-gradient(circle at 48% 48%,#304246 0%,#233238 75%); }
+html[data-theme="dark"] .profile-menu-link { background:#20211e;color:#fff; }
+
+@media (min-width:1051px) {
+  .sidebar { position: sticky; height: 72px; padding: 0 max(28px,calc((100vw - 1144px)/2)); }
+  .content .mode-tabs:not(.pulse-period) { display: flex; }
+}
+
+@media (max-width:1050px) {
+  .sidebar { background: #fffdf9; }
+  .sidebar .brand > strong, .sidebar .brand-full { color: var(--apx-ink); }
+  .mobile-close { color: var(--apx-ink); background: #eeeae2; border-color: #ddd7cd; }
+  header { min-height: 160px; height: auto; padding: 18px 24px 30px; background: var(--apx-paper); }
+  .mobile-site-title { color: var(--apx-ink); }
+  .mobile-site-title b { color: #77736b; }
+  .menu-btn { color: var(--apx-ink); background: #fffdf9; border-color: #d7d1c7; }
+  .header-copy h1 { font-size: 38px; }
+  .content { padding: 0 24px 65px; }
+  .search-grid { grid-template-columns: 1fr 28px 1fr; }
+  .search-grid label:nth-of-type(3) { grid-column: 1/-1; }
+  .route-map { grid-template-columns: .65fr 1.35fr; }
+}
+
+@media (max-width:720px) {
+  header { min-height: 174px; height: auto; padding: 11px 16px 26px; }
+  .page-kicker { margin-top: 13px; margin-bottom: 7px; }
+  .header-copy h1 { font-size: 31px; letter-spacing: -1.4px; }
+  .header-copy p { display: block; font-size: 12px; margin-top: 9px; }
+  .content { padding: 0 14px 55px; overflow: hidden; }
+  .search-panel { padding: 18px 13px; border-radius: 17px; }
+  .search-heading h2 { font-size: 21px; }
+  .updated { display: none; }
+  .search-grid { grid-template-columns: minmax(0,1fr) 20px minmax(0,1fr); gap: 6px; padding: 7px; }
+  .airport-field, .date-field { min-height: 54px; padding: 0 8px; }
+  .airport-field select, .date-field select { font-size: 11px; }
+  .route-map { grid-template-columns: 1fr; }
+  .route-map-copy { padding: 23px 20px; }
+  .route-map-copy h3 { font-size: 25px; }
+  .india-map-wrap, .india-map-wrap svg { height: 420px; min-height: 420px; }
+  .content .mode-tabs:not(.pulse-period) { display: flex; padding: 0; background: transparent; border-bottom: 1px solid var(--apx-line); border-radius: 0; gap: 18px; }
+  .content .mode-tabs:not(.pulse-period) button { flex: 0 0 auto; padding: 0 1px 12px; background: transparent; color: #77736b; border: 0; border-bottom: 3px solid transparent; border-radius: 0; font-size: 10px; white-space: nowrap; }
+  .content .mode-tabs:not(.pulse-period) button.active { background: transparent; color: var(--apx-ink); border-color: var(--apx-brand); }
+  .decision-hero { padding: 24px 20px; }
+  .decision-copy h2 { font-size: 26px; }
+  .decision-details, .pulse-columns { grid-template-columns: 1fr; }
+  footer { margin: 0 14px; }
+}
+
+@media (max-width:430px) {
+  .header-copy h1 { font-size: 27px; }
+  .search-grid label > span { font-size: 7px; }
+  .route-map-copy { padding: 20px 17px; }
+  .india-map-wrap, .india-map-wrap svg { height: 365px; min-height: 365px; }
+  .decision-score { border-left: 0; border-top: 1px solid #4a4942; padding: 18px 0 0; }
+}
+
+.route-swap{width:38px;height:38px;margin-top:10px;border:1px solid #a5a9a6;border-radius:50%;background:#f4f3ef;color:#af4f30;display:grid;place-items:center;cursor:pointer;transition:transform .18s,background .18s,border-color .18s}
+.route-swap:hover:not(:disabled){transform:rotate(180deg);background:#fff;border-color:#af4f30}
+.route-swap:disabled{opacity:.45;cursor:not-allowed}
+.route-swap svg{width:17px;height:17px;filter:none!important;transform:none!important}
+.consumer-shell .search-grid.market-grid{grid-template-columns:minmax(0,1fr) 38px minmax(0,1fr)}
+@media(max-width:620px){.consumer-shell .search-grid.market-grid{grid-template-columns:minmax(0,1fr) 38px minmax(0,1fr)}}
+
+/* Native selects cover the entire field, including the visible chevron. */
+.consumer-shell .airport-field,.consumer-shell .date-field{position:relative;cursor:pointer}
+.consumer-shell .airport-field select,.consumer-shell .date-field select{position:absolute;inset:0;width:100%;height:100%;padding:0 33px 0 44px;z-index:2;background:transparent!important;cursor:pointer}
+.consumer-shell .airport-field svg,.consumer-shell .date-field svg{pointer-events:none;flex:none}
+.consumer-shell .airport-field>svg:first-child,.consumer-shell .date-field>svg:first-child{position:absolute;left:15px;top:50%;transform:translateY(-50%);z-index:3}
+.consumer-shell .airport-field>svg:last-child,.consumer-shell .date-field>svg:last-child{position:absolute;right:13px;top:50%;transform:translateY(-50%);z-index:3;color:#8a654f;stroke-width:2.5}
+
+/* The native select covers the whole field; let the field own its focus ring. */
+.consumer-shell .airport-field select:focus,
+.consumer-shell .airport-field select:focus-visible,
+.consumer-shell .date-field select:focus,
+.consumer-shell .date-field select:focus-visible{outline:none!important;box-shadow:none!important}
+.consumer-shell .airport-field:focus-within,
+.consumer-shell .date-field:focus-within{border-color:#c65d3b;box-shadow:0 0 0 2px rgba(198,93,59,.36)}
+.consumer-shell .search-panel .search-heading h2{color:#f7f2e9}

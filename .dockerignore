@@ -1,0 +1,16 @@
+**/.env
+**/.env.*
+**/.runtime
+**/.run
+**/.idea
+**/node_modules
+**/target
+**/dist
+**/*.log
+**/*.sql.gz
+.git
+airfare_mimic
+docker
+previews
+sources
+tools
