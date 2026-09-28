@@ -250,3 +250,5 @@ html[data-theme="dark"] .profile-menu-link { background:#20211e;color:#fff; }
 .consumer-shell .airport-field:focus-within,
 .consumer-shell .date-field:focus-within{border-color:#c65d3b;box-shadow:0 0 0 2px rgba(198,93,59,.36)}
 .consumer-shell .search-panel .search-heading h2{color:#f7f2e9}
+
+.consumer-shell .chart-status{min-height:140px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:24px 16px;color:#5b6e70;background:#f5f3ee;border-radius:12px;margin:18px 0}.consumer-shell .chart-status strong{color:#25383c;font-size:16px}.consumer-shell .chart-status p{max-width:420px;margin:0;font-size:14px;line-height:1.6}.consumer-shell .analysis-retry{margin:20px 0;padding:12px 20px;border:1px solid #b8c3bf;border-radius:8px;background:#fff;color:#25383c;cursor:pointer}

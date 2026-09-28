@@ -77,7 +77,7 @@ export default function GovernmentPage() {
       if (live) { setBookingError(cause.message || 'Booking-window data is unavailable.'); setBookingBusy(false) }
     })
     return () => { live = false }
-  }, [view, selectedRoute, asOf])
+  }, [view, selectedRoute, asOf, requestVersion])
   const retry = () => setRequestVersion(value => value + 1)
   const routes = [...(report?.routes || [])]
     .filter(item => item.route.toLowerCase().includes(routeFilter.toLowerCase()))

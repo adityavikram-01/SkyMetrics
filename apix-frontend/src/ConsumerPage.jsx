@@ -91,22 +91,26 @@ function Decision({ intelligence, prediction, booking, route, date }) {
   </motion.section>
 }
 
-function DecisionDetails({ prediction, booking }) {
+function ChartStatus({ state, children }) {
+  return <div className="chart-status" role="status" aria-live="polite"><Clock3 size={22}/><strong>{state === 'loading' ? 'Loading analysis…' : state === 'error' ? 'Analysis could not be loaded' : 'Not enough comparable history yet'}</strong><p>{state === 'loading' ? 'This result will appear here shortly.' : state === 'error' ? 'Use Retry analysis below to try again.' : children}</p></div>
+}
+
+function DecisionDetails({ prediction, booking, states }) {
   const forecast = prediction?.data?.forecasts || {}
   const points = Object.entries(forecast).map(([key,v]) => ({ name:key.replace('next','').replace('Days','d'), price:v.estimatedMedian })).filter(x=>x.price)
   const best = booking?.data?.lowestMedianHorizon
   return <div className="decision-details">
     <motion.section className="card" variants={slide}><div className="card-title"><div><span className="eyebrow purple"><TrendingUp size={13}/> PRICE OUTLOOK</span><h3>If you wait, what may happen?</h3></div></div>
-      <div className="chart-box small"><ResponsiveContainer><LineChart data={points}><CartesianGrid stroke="#e2e8ee" vertical={false}/><XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill:'#788b9a',fontSize:11}}/><YAxis hide/><Tooltip content={<ChartTip/>}/><Line type="monotone" dataKey="price" stroke="#2c6dc7" strokeWidth={3} dot={{r:4,fill:'#a99bff'}}/></LineChart></ResponsiveContainer></div>
+      <>{points.length ? <div className="chart-box small"><ResponsiveContainer><LineChart data={points}><CartesianGrid stroke="#e2e8ee" vertical={false}/><XAxis dataKey="name" axisLine={false} tickLine={false} tick={{fill:'#788b9a',fontSize:11}}/><YAxis hide/><Tooltip content={<ChartTip/>}/><Line type="monotone" dataKey="price" stroke="#2c6dc7" strokeWidth={3} dot={{r:4,fill:'#a99bff'}}/></LineChart></ResponsiveContainer></div> : <ChartStatus state={states.prediction}>A price outlook needs enough completed flights with matching price observations. No estimate is shown for this selection.</ChartStatus>}</>
       <Tip>These are estimates from past movements of comparable flights, not a guaranteed future price.</Tip>
     </motion.section>
-    <motion.section className="card booking-answer" variants={slide}><span className="eyebrow green"><Clock3 size={13}/> BEST BOOKING TIME</span><strong>{best ? `${best} days before travel` : 'Still calculating'}</strong><p>{best ? `Past completed trips on this route had their lowest usual fare around ${best} days before departure.` : 'More comparable completed trips are needed.'}</p><div className="booking-icon"><CalendarDays size={35}/></div></motion.section>
+    <motion.section className="card booking-answer" variants={slide}><span className="eyebrow green"><Clock3 size={13}/> BEST BOOKING TIME</span><strong>{best ? `${best} days before travel` : states.booking === 'loading' ? 'Loading booking history…' : states.booking === 'error' ? 'Analysis unavailable' : 'More history needed'}</strong><p>{best ? `Past completed trips on this route had their lowest usual fare around ${best} days before departure.` : 'More comparable completed trips are needed.'}</p><div className="booking-icon"><CalendarDays size={35}/></div></motion.section>
   </div>
 }
 
-function BookingChart({ booking }) {
+function BookingChart({ booking, state }) {
   const curve = (booking?.data?.curve || []).map(x => ({ day:x.daysBeforeDeparture, median:x.median })).filter(x=>x.median)
-  return <motion.section className="card wide" variants={slide}><div className="card-title"><div><span className="eyebrow"><Clock3 size={13}/> FARE JOURNEY</span><h3>How prices change before departure</h3></div></div><div className="chart-box"><ResponsiveContainer><AreaChart data={curve}><defs><linearGradient id="fareArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#2c6dc7" stopOpacity=".32"/><stop offset="1" stopColor="#2c6dc7" stopOpacity="0"/></linearGradient></defs><CartesianGrid stroke="#e2e8ee" vertical={false}/><XAxis dataKey="day" axisLine={false} tickLine={false} tick={{fill:'#788b9a',fontSize:11}}/><YAxis hide/><Tooltip content={<ChartTip/>}/><Area type="monotone" dataKey="median" stroke="#2c6dc7" strokeWidth={3} fill="url(#fareArea)"/></AreaChart></ResponsiveContainer></div><Tip>Moving left means travelling closer to departure. Prices usually become less predictable in the last few days.</Tip></motion.section>
+  return <motion.section className="card wide" variants={slide}><div className="card-title"><div><span className="eyebrow"><Clock3 size={13}/> FARE JOURNEY</span><h3>How prices change before departure</h3></div></div><>{curve.length ? <div className="chart-box"><ResponsiveContainer><AreaChart data={curve}><defs><linearGradient id="fareArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#2c6dc7" stopOpacity=".32"/><stop offset="1" stopColor="#2c6dc7" stopOpacity="0"/></linearGradient></defs><CartesianGrid stroke="#e2e8ee" vertical={false}/><XAxis dataKey="day" axisLine={false} tickLine={false} tick={{fill:'#788b9a',fontSize:11}}/><YAxis hide/><Tooltip content={<ChartTip/>}/><Area type="monotone" dataKey="median" stroke="#2c6dc7" strokeWidth={3} fill="url(#fareArea)" dot={curve.length === 1 ? { r:4 } : false}/></AreaChart></ResponsiveContainer></div> : <ChartStatus state={state}>The fare journey needs completed trips observed at different booking lead times.</ChartStatus>}</><Tip>Moving left means travelling closer to departure. Prices usually become less predictable in the last few days.</Tip></motion.section>
 }
 
 function Calendar({ calendar }) {
@@ -114,9 +118,9 @@ function Calendar({ calendar }) {
   return <motion.section className="card calendar-card" variants={slide}><div className="card-title"><div><span className="eyebrow green"><CalendarDays size={13}/> FLEXIBLE DATES</span><h3>Pick a lower-fare date</h3></div></div><div className="calendar-grid">{rows.slice(0,35).map(x => { const score=(x.lowestFare-low)/(high-low||1); return <div key={x.departureDate} className={score<.33?'cheap':score>.7?'pricey':''}><small>{shortDay(x.departureDate)}</small><strong>{x.lowestFare ? `₹${Math.round(x.lowestFare/100)/10}k` : '—'}</strong>{x.lowestFare===low&&<i>LOW</i>}</div>})}</div><Tip>Green dates have the lower prices in this 45-day travel window.</Tip></motion.section>
 }
 
-function Airlines({ airlines }) {
+function Airlines({ airlines, state }) {
   const entries=Object.entries(airlines?.data?.airlines||{}).map(([code,v])=>({name:airlineNames[code]||code,fare:v.matchedCellFares?.median||0})).filter(x=>x.fare).sort((a,b)=>a.fare-b.fare)
-  return <motion.section className="card" variants={slide}><div className="card-title"><div><span className="eyebrow orange"><Plane size={13}/> AIRLINE VIEW</span><h3>Who is usually cheaper?</h3></div></div><div className="chart-box small"><ResponsiveContainer><BarChart data={entries} layout="vertical"><XAxis type="number" hide/><YAxis width={82} dataKey="name" type="category" axisLine={false} tickLine={false} tick={{fill:'#788b9a',fontSize:10}}/><Tooltip content={<ChartTip/>}/><Bar dataKey="fare" radius={[0,8,8,0]}>{entries.map((_,i)=><Cell key={i} fill={i===0?'#247a5a':'#2c6dc7'}/>)}</Bar></BarChart></ResponsiveContainer></div><Tip>{entries[0] ? <><strong>{entries[0].name}</strong> had the lowest typical comparable fare on this route.</> : 'Airline comparison is being prepared.'}</Tip></motion.section>
+  return <motion.section className="card" variants={slide}><div className="card-title"><div><span className="eyebrow orange"><Plane size={13}/> AIRLINE VIEW</span><h3>Who is usually cheaper?</h3></div></div><>{entries.length ? <div className="chart-box small"><ResponsiveContainer><BarChart data={entries} layout="vertical"><XAxis type="number" hide/><YAxis width={82} dataKey="name" type="category" axisLine={false} tickLine={false} tick={{fill:'#788b9a',fontSize:10}}/><Tooltip content={<ChartTip/>}/><Bar dataKey="fare" radius={[0,8,8,0]}>{entries.map((_,i)=><Cell key={i} fill={i===0?'#247a5a':'#2c6dc7'}/>)}</Bar></BarChart></ResponsiveContainer></div> : <ChartStatus state={state}>There are not enough matched airline fares to compare this route.</ChartStatus>}</><Tip>{entries[0] ? <><strong>{entries[0].name}</strong> had the lowest typical comparable fare on this route.</> : 'Airline comparison is being prepared.'}</Tip></motion.section>
 }
 
 function Offers({ search }) {
@@ -149,6 +153,7 @@ function ConsumerPage({ view='decision' }) {
   const [routes,setRoutes]=useState([{code:'BOM-DEL'}]), [route,setRoute]=useState(requestedRoute), [date,setDate]=useState(''), [dates,setDates]=useState([]), [pulseWindow,setPulseWindow]=useState(30)
   const [loading,setLoading]=useState(false), [error,setError]=useState(''), [data,setData]=useState({})
   const [initialReady,setInitialReady]=useState(false)
+  const [states,setStates]=useState({}), [retry,setRetry]=useState(0)
   const [savedTrips,setSavedTrips]=useState([]), [watchlist,setWatchlist]=useState([])
   const requestId=useRef(0)
   useEffect(()=>{api.routes().then(r=>{setRoutes(r);if(!r.some(x=>x.code===route))setRoute(r[0]?.code||'BOM-DEL')}).catch(()=>setError('Routes could not be loaded. Please reload the page.'))},[])
@@ -165,12 +170,12 @@ function ConsumerPage({ view='decision' }) {
     } : {
       heatmap:()=>api.heatmap(undefined,pulseWindow), index:()=>api.index(undefined,from), anomalies:()=>api.anomalies(route)
     }
-    setError('');setData({});setLoading(true)
+    setError('');setData({});setLoading(true);setStates(Object.fromEntries(Object.keys(jobs).map(key=>[key,'loading'])))
     const primary=mode==='decision'?'intelligence':mode==='route'?'search':'heatmap'
     const run=(key,call)=>{
       const cacheKey=`${key}:${route}:${key==='heatmap'?pulseWindow:key==='index'?from:key==='search'||key==='intelligence'||key==='prediction'?date:''}`
-      return cached(cacheKey,call).then(value=>{if(id===requestId.current){setData(old=>({...old,[key]:value}));if(key==='intelligence'&&user)authApi.recordSearch(route,date).catch(()=>{})}}).catch(()=>{
-        if(id===requestId.current&&key===primary)setError('This result could not be loaded. Please try again.')
+      return cached(cacheKey,call).then(value=>{if(id===requestId.current){setData(old=>({...old,[key]:value}));setStates(old=>({...old,[key]:'ready'}));if(key==='intelligence'&&user)authApi.recordSearch(route,date).catch(()=>{})}}).catch(()=>{
+        if(id===requestId.current){setStates(old=>({...old,[key]:'error'}));if(key===primary)setError('This result could not be loaded. Please try again.')}
       })
     }
     run(primary,jobs[primary]).finally(()=>{
@@ -178,7 +183,7 @@ function ConsumerPage({ view='decision' }) {
       Object.entries(jobs).filter(([key])=>key!==primary).forEach(([key,call])=>run(key,call))
     })
     return()=>{requestId.current++}
-  },[route,date,mode,pulseWindow,user])
+  },[route,date,mode,pulseWindow,user,retry])
   const index=data.index?.data?.[pulseWindow===1?'daily':pulseWindow===7?'weekly':'monthly'], anomalies=data.anomalies?.data?.anomalies?.length||0
   const savedTrip = savedTrips.some(item => item.route===route&&item.departureDate===date)
   const watched = watchlist.some(item => item.route===route)
@@ -196,7 +201,7 @@ function ConsumerPage({ view='decision' }) {
   const shareReport = async () => { const url=new URL(window.location.href);url.searchParams.set('route',route);url.searchParams.set('date',date);try{await navigator.clipboard.writeText(url.href);setActionNotice('Shareable fare report link copied.')}catch{window.prompt('Copy this fare report link',url.href)} }
   const page = mode==='decision' ? ['FLIGHTS','Check your fare','See how a flight price compares with similar trips.'] : mode==='route' ? ['ROUTE INSIGHTS','Explore your route','Compare dates, airlines and past price patterns.'] : ['FARE TRENDS','Track fare movement','See which routes are becoming more or less expensive.']
   if (!initialReady && !error) return <LoadingScreen label="Loading fare analysis"/>
-  return <div className="app-shell consumer-shell"><SiteNav section={mode}/><main><div className="content"><div className="consumer-intro"><span className="page-kicker">{page[0]}</span><h1>{page[1]}</h1><p>{page[2]}</p></div><AnimatePresence>{error&&<motion.div className="error-banner" initial={{opacity:0,y:-8}} animate={{opacity:1,y:0}}><TriangleAlert size={17}/>{error}</motion.div>}</AnimatePresence><motion.div initial="hidden" animate="show" transition={{staggerChildren:.06}}><SearchPanel routes={routes} route={route} setRoute={setRoute} date={date} setDate={setDate} dates={dates} loading={loading} onWatch={watchRoute} watched={watched} showMap={mode==='decision'} showDate={mode!=='pulse'} onSwap={swapRoute}/>{mode==='decision'&&<><Decision intelligence={data.intelligence} prediction={data.prediction} booking={data.booking} route={route} date={date}/><div className="fare-actions"><button onClick={saveTrip}><Bookmark size={16} fill={savedTrip?'currentColor':'none'}/>{savedTrip?'Saved trip':'Save this trip'}</button><button onClick={()=>navigate(user?'/account':'/login?next=%2Faccount')}><Bell size={16}/>Set price alert</button><button onClick={shareReport}><Link2 size={16}/>Share fare report</button></div><DecisionDetails prediction={data.prediction} booking={data.booking}/></>}{mode==='route'&&<div className="dashboard-grid"><BookingChart booking={data.booking}/><Calendar calendar={data.calendar}/><Airlines airlines={data.airlines}/><Offers search={data.search}/></div>}{mode==='pulse'&&<IndiaPulse heatmap={data.heatmap} index={index} anomalies={anomalies} period={pulseWindow} setPeriod={setPulseWindow} city={route.split('-')[0]}/>}</motion.div>{actionNotice&&<div className="action-notice" role="status">{actionNotice}<button onClick={()=>setActionNotice('')} aria-label="Dismiss"><X size={14}/></button></div>}</div><footer><Logo/><p>Simulated fares · information date: 13 September 2026</p></footer></main>{loading&&<div className="loading-rail"><i/></div>}</div>
+  return <div className="app-shell consumer-shell"><SiteNav section={mode}/><main><div className="content"><div className="consumer-intro"><span className="page-kicker">{page[0]}</span><h1>{page[1]}</h1><p>{page[2]}</p></div><AnimatePresence>{error&&<motion.div className="error-banner" initial={{opacity:0,y:-8}} animate={{opacity:1,y:0}}><TriangleAlert size={17}/>{error}</motion.div>}</AnimatePresence><motion.div initial="hidden" animate="show" transition={{staggerChildren:.06}}><SearchPanel routes={routes} route={route} setRoute={setRoute} date={date} setDate={setDate} dates={dates} loading={loading} onWatch={watchRoute} watched={watched} showMap={mode==='decision'} showDate={mode!=='pulse'} onSwap={swapRoute}/>{mode==='decision'&&<><Decision intelligence={data.intelligence} prediction={data.prediction} booking={data.booking} route={route} date={date}/><div className="fare-actions"><button onClick={saveTrip}><Bookmark size={16} fill={savedTrip?'currentColor':'none'}/>{savedTrip?'Saved trip':'Save this trip'}</button><button onClick={()=>navigate(user?'/users/account':'/login?next=%2Fusers%2Faccount')}><Bell size={16}/>Set price alert</button><button onClick={shareReport}><Link2 size={16}/>Share fare report</button></div><DecisionDetails prediction={data.prediction} booking={data.booking} states={states}/></>}{mode==='route'&&<div className="dashboard-grid"><BookingChart booking={data.booking} state={states.booking}/><Calendar calendar={data.calendar}/><Airlines airlines={data.airlines} state={states.airlines}/><Offers search={data.search}/></div>}{mode==='pulse'&&<IndiaPulse heatmap={data.heatmap} index={index} anomalies={anomalies} period={pulseWindow} setPeriod={setPulseWindow} city={route.split('-')[0]}/>}</motion.div>{Object.values(states).includes('error')&&<button className="analysis-retry" onClick={()=>setRetry(value=>value+1)}>Retry analysis</button>}{actionNotice&&<div className="action-notice" role="status">{actionNotice}<button onClick={()=>setActionNotice('')} aria-label="Dismiss"><X size={14}/></button></div>}</div><footer><Logo/><p>Simulated fares · information date: 13 September 2026</p></footer></main>{loading&&<div className="loading-rail"><i/></div>}</div>
 }
 
 export default ConsumerPage

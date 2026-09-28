@@ -1,7 +1,7 @@
 /* APIx visual system: a restrained flight-search surface with an editorial data layer. */
 :root{--ink:#17283a;--navy:#10253e;--blue:#2463d3;--blue-dark:#174cb3;--page:#f5f7f8;--surface:#fff;--line:#dce3e9;--muted:#67788a;--cyan:#2463d3;--lime:#177a64;--orange:#bb5a37;--red:#b34843;--purple:#5163a6;--bg:#f5f7f8;--panel:#fff;--panel2:#f7f9fb;color:var(--ink);font-family:'DM Sans',sans-serif}
 html,body,#root{min-height:100%;background:var(--page)}body{background:var(--page);color:var(--ink)}
-button,select{transition:background-color .18s,border-color .18s,box-shadow .18s,transform .18s}button:focus-visible,select:focus-visible{outline:3px solid #8fb5fa;outline-offset:2px}
+button,select{transition:background-color .18s,border-color .18s,box-shadow .18s,transform .18s}button:focus:not(:focus-visible),a:focus:not(:focus-visible){outline:none}button:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid #c65d3b;outline-offset:3px}
 .app-shell{display:block;min-height:100vh;background:var(--page)}main{margin:0;width:100%;min-width:0}
 .brand strong{font-size:25px;letter-spacing:-1.6px;color:#fff}.brand strong span{color:#83b3ff}.brand small{color:#b2c5d9;letter-spacing:.8px;font-size:8px}.logo-mark{background:#fff;box-shadow:none;transform:none;color:var(--navy);border-radius:9px;width:35px;height:35px}
 .sidebar{background:var(--navy);border:0;box-shadow:none}.sidebar nav button{font:700 12px 'DM Sans',sans-serif;letter-spacing:0;color:#b7c7d8}.sidebar nav button:hover{background:#ffffff12;color:#fff}.sidebar nav button.active{background:#ffffff1c;color:#fff}.sidebar nav button.active svg{color:#fff}.sidebar nav button i,.side-card{display:none}.side-foot{color:#d4e4ef}.side-foot strong{font-size:11px}.side-foot small{color:#9cb1c4}
