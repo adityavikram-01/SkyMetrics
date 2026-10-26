@@ -1,0 +1,491 @@
+{
+  "directional_routes": [
+    "AMD-BOM",
+    "AMD-DEL",
+    "BLR-BOM",
+    "BLR-CCU",
+    "BLR-COK",
+    "BLR-DEL",
+    "BLR-HYD",
+    "BLR-MAA",
+    "BLR-PNQ",
+    "BOM-AMD",
+    "BOM-BLR",
+    "BOM-CCU",
+    "BOM-DEL",
+    "BOM-GOI",
+    "BOM-HYD",
+    "BOM-MAA",
+    "CCU-BLR",
+    "CCU-BOM",
+    "CCU-DEL",
+    "COK-BLR",
+    "DEL-AMD",
+    "DEL-BLR",
+    "DEL-BOM",
+    "DEL-CCU",
+    "DEL-GAU",
+    "DEL-GOI",
+    "DEL-HYD",
+    "DEL-LKO",
+    "DEL-MAA",
+    "DEL-PAT",
+    "DEL-PNQ",
+    "DEL-SXR",
+    "GAU-DEL",
+    "GOI-BOM",
+    "GOI-DEL",
+    "HYD-BLR",
+    "HYD-BOM",
+    "HYD-DEL",
+    "HYD-MAA",
+    "LKO-DEL",
+    "MAA-BLR",
+    "MAA-BOM",
+    "MAA-DEL",
+    "MAA-HYD",
+    "PAT-DEL",
+    "PNQ-BLR",
+    "PNQ-DEL",
+    "SXR-DEL"
+  ],
+  "airports": [
+    "AMD",
+    "BLR",
+    "BOM",
+    "CCU",
+    "COK",
+    "DEL",
+    "GAU",
+    "GOI",
+    "HYD",
+    "LKO",
+    "MAA",
+    "PAT",
+    "PNQ",
+    "SXR"
+  ],
+  "pairs": [
+    {
+      "airports": [
+        "AMD",
+        "BOM"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 177878.54545454544,
+      "preserved": false
+    },
+    {
+      "airports": [
+        "AMD",
+        "DEL"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 207344.9090909091,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "BLR",
+        "BOM"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 351580.36363636365,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "BLR",
+        "CCU"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 195274.45454545456,
+      "preserved": false
+    },
+    {
+      "airports": [
+        "BLR",
+        "COK"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 125128.18181818182,
+      "preserved": false
+    },
+    {
+      "airports": [
+        "BLR",
+        "DEL"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 395109.36363636365,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "BLR",
+        "HYD"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 187473.45454545456,
+      "preserved": false
+    },
+    {
+      "airports": [
+        "BLR",
+        "MAA"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 118877.09090909091,
+      "preserved": false
+    },
+    {
+      "airports": [
+        "BLR",
+        "PNQ"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 158935.72727272726,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "BOM",
+        "CCU"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 170963.45454545456,
+      "preserved": false
+    },
+    {
+      "airports": [
+        "BOM",
+        "DEL"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 570333.9090909091,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "BOM",
+        "GOI"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 88034.63636363637,
+      "preserved": false
+    },
+    {
+      "airports": [
+        "BOM",
+        "HYD"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 199146.72727272726,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "BOM",
+        "MAA"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 187462.27272727274,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "CCU",
+        "DEL"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 231419.45454545456,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "DEL",
+        "GAU"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 128039.09090909091,
+      "preserved": false
+    },
+    {
+      "airports": [
+        "DEL",
+        "GOI"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 80490.18181818182,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "DEL",
+        "HYD"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 272039.1818181818,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "DEL",
+        "LKO"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 124311.90909090909,
+      "preserved": false
+    },
+    {
+      "airports": [
+        "DEL",
+        "MAA"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 201581.36363636365,
+      "preserved": false
+    },
+    {
+      "airports": [
+        "DEL",
+        "PAT"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 115354.63636363637,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "DEL",
+        "PNQ"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 240910.9090909091,
+      "preserved": true
+    },
+    {
+      "airports": [
+        "DEL",
+        "SXR"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 193016.18181818182,
+      "preserved": false
+    },
+    {
+      "airports": [
+        "HYD",
+        "MAA"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 127631.27272727272,
+      "preserved": false
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "airports": [
+        "BLR",
+        "GOI"
+      ],
+      "complete_months": 11,
+      "mean_monthly_passengers_both_directions": 48475.454545454544
+    }
+  ],
+  "potential_via_cities": {
+    "AMD-BOM": [
+      "DEL"
+    ],
+    "AMD-DEL": [
+      "BOM"
+    ],
+    "BLR-BOM": [
+      "CCU",
+      "DEL",
+      "HYD",
+      "MAA"
+    ],
+    "BLR-CCU": [
+      "BOM",
+      "DEL"
+    ],
+    "BLR-COK": [],
+    "BLR-DEL": [
+      "BOM",
+      "CCU",
+      "HYD",
+      "MAA",
+      "PNQ"
+    ],
+    "BLR-HYD": [
+      "BOM",
+      "DEL",
+      "MAA"
+    ],
+    "BLR-MAA": [
+      "BOM",
+      "DEL",
+      "HYD"
+    ],
+    "BLR-PNQ": [
+      "DEL"
+    ],
+    "BOM-AMD": [
+      "DEL"
+    ],
+    "BOM-BLR": [
+      "CCU",
+      "DEL",
+      "HYD",
+      "MAA"
+    ],
+    "BOM-CCU": [
+      "BLR",
+      "DEL"
+    ],
+    "BOM-DEL": [
+      "AMD",
+      "BLR",
+      "CCU",
+      "GOI",
+      "HYD",
+      "MAA"
+    ],
+    "BOM-GOI": [
+      "DEL"
+    ],
+    "BOM-HYD": [
+      "BLR",
+      "DEL",
+      "MAA"
+    ],
+    "BOM-MAA": [
+      "BLR",
+      "DEL",
+      "HYD"
+    ],
+    "CCU-BLR": [
+      "BOM",
+      "DEL"
+    ],
+    "CCU-BOM": [
+      "BLR",
+      "DEL"
+    ],
+    "CCU-DEL": [
+      "BLR",
+      "BOM"
+    ],
+    "COK-BLR": [],
+    "DEL-AMD": [
+      "BOM"
+    ],
+    "DEL-BLR": [
+      "BOM",
+      "CCU",
+      "HYD",
+      "MAA",
+      "PNQ"
+    ],
+    "DEL-BOM": [
+      "AMD",
+      "BLR",
+      "CCU",
+      "GOI",
+      "HYD",
+      "MAA"
+    ],
+    "DEL-CCU": [
+      "BLR",
+      "BOM"
+    ],
+    "DEL-GAU": [],
+    "DEL-GOI": [
+      "BOM"
+    ],
+    "DEL-HYD": [
+      "BLR",
+      "BOM",
+      "MAA"
+    ],
+    "DEL-LKO": [],
+    "DEL-MAA": [
+      "BLR",
+      "BOM",
+      "HYD"
+    ],
+    "DEL-PAT": [],
+    "DEL-PNQ": [
+      "BLR"
+    ],
+    "DEL-SXR": [],
+    "GAU-DEL": [],
+    "GOI-BOM": [
+      "DEL"
+    ],
+    "GOI-DEL": [
+      "BOM"
+    ],
+    "HYD-BLR": [
+      "BOM",
+      "DEL",
+      "MAA"
+    ],
+    "HYD-BOM": [
+      "BLR",
+      "DEL",
+      "MAA"
+    ],
+    "HYD-DEL": [
+      "BLR",
+      "BOM",
+      "MAA"
+    ],
+    "HYD-MAA": [
+      "BLR",
+      "BOM",
+      "DEL"
+    ],
+    "LKO-DEL": [],
+    "MAA-BLR": [
+      "BOM",
+      "DEL",
+      "HYD"
+    ],
+    "MAA-BOM": [
+      "BLR",
+      "DEL",
+      "HYD"
+    ],
+    "MAA-DEL": [
+      "BLR",
+      "BOM",
+      "HYD"
+    ],
+    "MAA-HYD": [
+      "BLR",
+      "BOM",
+      "DEL"
+    ],
+    "PAT-DEL": [],
+    "PNQ-BLR": [
+      "DEL"
+    ],
+    "PNQ-DEL": [
+      "BLR"
+    ],
+    "SXR-DEL": []
+  },
+  "schema_version": 1,
+  "is_synthetic": true,
+  "status": "NETWORK_SCOPE_ONLY_NOT_GENERATED",
+  "selection_method": "Preserve existing 24 directions; rank additional reciprocal pairs by complete source months then mean observed bidirectional monthly passenger traffic.",
+  "source_months": "2024-01..2024-12, excluding missing May",
+  "limitations": [
+    "Passenger traffic does not establish nonstop airline service or exact schedules.",
+    "GOA city traffic cannot distinguish GOI from GOX; retained GOI is an explicit scenario airport assignment.",
+    "Via cities represent graph connectivity only; timing and separate-ticket validation still required.",
+    "No schedules, fares or observations have been generated by this scope builder."
+  ]
+}

@@ -1,0 +1,928 @@
+[
+  {
+    "source": "dataset",
+    "target": "cm_dataset",
+    "columns": [
+      {
+        "source": "id",
+        "name": "id",
+        "type": "VARCHAR(64)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "version",
+        "name": "version",
+        "type": "VARCHAR(40)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "config_json",
+        "name": "config_json",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "is_synthetic",
+        "name": "is_synthetic",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "id"
+    ]
+  },
+  {
+    "source": "airport",
+    "target": "cm_airport",
+    "columns": [
+      {
+        "source": "code",
+        "name": "code",
+        "type": "VARCHAR(64)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "name",
+        "name": "name",
+        "type": "VARCHAR(255)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "timezone",
+        "name": "timezone",
+        "type": "VARCHAR(40)",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "code"
+    ]
+  },
+  {
+    "source": "airline",
+    "target": "cm_airline",
+    "columns": [
+      {
+        "source": "code",
+        "name": "code",
+        "type": "VARCHAR(64)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "name",
+        "name": "name",
+        "type": "VARCHAR(255)",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "code"
+    ]
+  },
+  {
+    "source": "route",
+    "target": "cm_route",
+    "columns": [
+      {
+        "source": "code",
+        "name": "code",
+        "type": "VARCHAR(64)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "origin",
+        "name": "origin",
+        "type": "VARCHAR(3)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "destination",
+        "name": "destination",
+        "type": "VARCHAR(3)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "duration_minutes",
+        "name": "duration_minutes",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "baseline_paise",
+        "name": "baseline_paise",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "provenance",
+        "name": "provenance",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "code"
+    ]
+  },
+  {
+    "source": "service",
+    "target": "cm_service",
+    "columns": [
+      {
+        "source": "id",
+        "name": "id",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "route",
+        "name": "route",
+        "type": "VARCHAR(7)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "airline",
+        "name": "airline",
+        "type": "VARCHAR(2)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "flight_number",
+        "name": "flight_number",
+        "type": "VARCHAR(30)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "departure_minute",
+        "name": "departure_minute",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "aircraft",
+        "name": "aircraft",
+        "type": "VARCHAR(30)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "capacity",
+        "name": "capacity",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "operating_days",
+        "name": "operating_days",
+        "type": "VARCHAR(7)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "valid_from",
+        "name": "valid_from",
+        "type": "DATE",
+        "java": "LocalDate",
+        "conversion": "identity"
+      },
+      {
+        "source": "valid_to",
+        "name": "valid_to",
+        "type": "DATE",
+        "java": "LocalDate",
+        "conversion": "identity"
+      },
+      {
+        "source": "schedule_status",
+        "name": "schedule_status",
+        "type": "VARCHAR(50)",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "id"
+    ]
+  },
+  {
+    "source": "departure",
+    "target": "cm_departure",
+    "columns": [
+      {
+        "source": "id",
+        "name": "id",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "service_id",
+        "name": "service_id",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "travel_date",
+        "name": "travel_date",
+        "type": "DATE",
+        "java": "LocalDate",
+        "conversion": "identity"
+      },
+      {
+        "source": "departure_utc_minute",
+        "name": "departure_at",
+        "type": "DATETIME(6)",
+        "java": "LocalDateTime",
+        "conversion": "ordinal_minute"
+      },
+      {
+        "source": "arrival_utc_minute",
+        "name": "arrival_at",
+        "type": "DATETIME(6)",
+        "java": "LocalDateTime",
+        "conversion": "ordinal_minute"
+      }
+    ],
+    "pk": [
+      "id"
+    ]
+  },
+  {
+    "source": "fare_product",
+    "target": "cm_fare_product",
+    "columns": [
+      {
+        "source": "id",
+        "name": "id",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "airline",
+        "name": "airline",
+        "type": "VARCHAR(2)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "code",
+        "name": "code",
+        "type": "VARCHAR(64)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "cabin",
+        "name": "cabin",
+        "type": "VARCHAR(20)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "cabin_bag_kg",
+        "name": "cabin_bag_kg",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "checked_bag_kg",
+        "name": "checked_bag_kg",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "meal_included",
+        "name": "meal_included",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "seat_selection_included",
+        "name": "seat_selection_included",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "refundable",
+        "name": "refundable",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "change_fee_paise",
+        "name": "change_fee_paise",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "cancel_fee_paise",
+        "name": "cancel_fee_paise",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "surcharge_paise",
+        "name": "surcharge_paise",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "conditions",
+        "name": "conditions",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "provenance",
+        "name": "provenance",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "id"
+    ]
+  },
+  {
+    "source": "service_rating",
+    "target": "cm_service_rating",
+    "columns": [
+      {
+        "source": "airline",
+        "name": "airline",
+        "type": "VARCHAR(2)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "score",
+        "name": "score",
+        "type": "DOUBLE",
+        "java": "Double",
+        "conversion": "identity"
+      },
+      {
+        "source": "kind",
+        "name": "kind",
+        "type": "VARCHAR(60)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "review_count",
+        "name": "review_count",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "method",
+        "name": "method",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "airline"
+    ]
+  },
+  {
+    "source": "source_record",
+    "target": "cm_source_record",
+    "columns": [
+      {
+        "source": "id",
+        "name": "id",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "kind",
+        "name": "kind",
+        "type": "VARCHAR(60)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "record_json",
+        "name": "record_json",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "id"
+    ]
+  },
+  {
+    "source": "schema_revision",
+    "target": "cm_schema_revision",
+    "columns": [
+      {
+        "source": "version",
+        "name": "version",
+        "type": "VARCHAR(40)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "parent_dataset_id",
+        "name": "parent_dataset_id",
+        "type": "VARCHAR(64)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "definition_sha256",
+        "name": "definition_sha256",
+        "type": "VARCHAR(64)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "applied_at",
+        "name": "applied_at",
+        "type": "VARCHAR(255)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "notes",
+        "name": "notes",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "version"
+    ]
+  },
+  {
+    "source": "calibration_source",
+    "target": "cm_calibration_source",
+    "columns": [
+      {
+        "source": "code",
+        "name": "code",
+        "type": "VARCHAR(64)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "url",
+        "name": "url",
+        "type": "VARCHAR(255)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "checked_on",
+        "name": "checked_on",
+        "type": "DATE",
+        "java": "LocalDate",
+        "conversion": "identity"
+      },
+      {
+        "source": "scope",
+        "name": "scope",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "code"
+    ]
+  },
+  {
+    "source": "offer_policy",
+    "target": "cm_offer_policy",
+    "columns": [
+      {
+        "source": "id",
+        "name": "id",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "airline",
+        "name": "airline",
+        "type": "VARCHAR(2)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "code",
+        "name": "code",
+        "type": "VARCHAR(64)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "cabin",
+        "name": "cabin",
+        "type": "VARCHAR(20)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "cabin_bag_kg",
+        "name": "cabin_bag_kg",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "checked_bag_kg",
+        "name": "checked_bag_kg",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "meal_included",
+        "name": "meal_included",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "seat_selection_included",
+        "name": "seat_selection_included",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "refundable",
+        "name": "refundable",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "change_fee_paise",
+        "name": "change_fee_paise",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "cancel_fee_paise",
+        "name": "cancel_fee_paise",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "surcharge_paise",
+        "name": "surcharge_paise",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "adult_multiplier_bp",
+        "name": "adult_multiplier_bp",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "child_multiplier_bp",
+        "name": "child_multiplier_bp",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "infant_fee_paise",
+        "name": "infant_fee_paise",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "provenance",
+        "name": "provenance",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "id"
+    ]
+  },
+  {
+    "source": "service_cabin",
+    "target": "cm_service_cabin",
+    "columns": [
+      {
+        "source": "service_id",
+        "name": "service_id",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "cabin",
+        "name": "cabin",
+        "type": "VARCHAR(20)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "capacity",
+        "name": "capacity",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "price_multiplier_bp",
+        "name": "price_multiplier_bp",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "inventory_method",
+        "name": "inventory_method",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "service_id",
+      "cabin"
+    ]
+  },
+  {
+    "source": "rating_component",
+    "target": "cm_rating_component",
+    "columns": [
+      {
+        "source": "airline",
+        "name": "airline",
+        "type": "VARCHAR(2)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "component",
+        "name": "component",
+        "type": "VARCHAR(40)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "score",
+        "name": "score",
+        "type": "DOUBLE",
+        "java": "Double",
+        "conversion": "identity"
+      },
+      {
+        "source": "weight",
+        "name": "weight",
+        "type": "DOUBLE",
+        "java": "Double",
+        "conversion": "identity"
+      },
+      {
+        "source": "provenance",
+        "name": "provenance",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "airline",
+      "component"
+    ]
+  },
+  {
+    "source": "route_service_profile",
+    "target": "cm_route_service_profile",
+    "columns": [
+      {
+        "source": "route",
+        "name": "route",
+        "type": "VARCHAR(7)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "service_count",
+        "name": "service_count",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "carrier_count",
+        "name": "carrier_count",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "assignment_status",
+        "name": "assignment_status",
+        "type": "VARCHAR(60)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "demand_source",
+        "name": "demand_source",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "limitations",
+        "name": "limitations",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "route"
+    ]
+  },
+  {
+    "source": "connection_rule",
+    "target": "cm_connection_rule",
+    "columns": [
+      {
+        "source": "airport",
+        "name": "airport",
+        "type": "VARCHAR(3)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "minimum_minutes",
+        "name": "minimum_minutes",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "maximum_minutes",
+        "name": "maximum_minutes",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "protected",
+        "name": "protected",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "provenance",
+        "name": "provenance",
+        "type": "LONGTEXT",
+        "java": "String",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "airport"
+    ]
+  },
+  {
+    "source": "observation",
+    "target": "cm_observation",
+    "columns": [
+      {
+        "source": "departure_id",
+        "name": "departure_id",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "search_day",
+        "name": "collection_date",
+        "type": "DATE",
+        "java": "LocalDate",
+        "conversion": "ordinal_date"
+      },
+      {
+        "source": "horizon",
+        "name": "horizon",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "outcome",
+        "name": "outcome",
+        "type": "VARCHAR(20)",
+        "java": "String",
+        "conversion": "identity"
+      },
+      {
+        "source": "base_paise",
+        "name": "base_paise",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "tax_paise",
+        "name": "tax_paise",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "fee_paise",
+        "name": "fee_paise",
+        "type": "BIGINT",
+        "java": "Long",
+        "conversion": "identity"
+      },
+      {
+        "source": "bookable_seats",
+        "name": "bookable_seats",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "remaining_inventory",
+        "name": "remaining_inventory",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "arrivals",
+        "name": "arrivals",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      },
+      {
+        "source": "cancellations",
+        "name": "cancellations",
+        "type": "INT",
+        "java": "Integer",
+        "conversion": "identity"
+      }
+    ],
+    "pk": [
+      "departure_id",
+      "collection_date"
+    ]
+  }
+]

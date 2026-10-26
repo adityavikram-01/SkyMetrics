@@ -1,0 +1,2740 @@
+[
+  {
+    "id": "6E-CERTIFICATION-skytrax",
+    "airline": "6E",
+    "kind": "CERTIFICATION",
+    "payload": {
+      "value": 4,
+      "scale": 5,
+      "provider": "Skytrax",
+      "scope": "AIRLINE",
+      "statistic": "EXPERT_CERTIFICATION",
+      "review_count": null,
+      "route_median": null
+    },
+    "source_url": "https://skytraxratings.com/airlines/indigo-rating",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "AI-CERTIFICATION-skytrax",
+    "airline": "AI",
+    "kind": "CERTIFICATION",
+    "payload": {
+      "value": 4,
+      "scale": 5,
+      "provider": "Skytrax",
+      "scope": "AIRLINE",
+      "statistic": "EXPERT_CERTIFICATION",
+      "review_count": null,
+      "route_median": null
+    },
+    "source_url": "https://skytraxratings.com/airlines/air-india-rating",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "IX-CERTIFICATION-skytrax",
+    "airline": "IX",
+    "kind": "CERTIFICATION",
+    "payload": {
+      "value": 4,
+      "scale": 5,
+      "provider": "Skytrax",
+      "scope": "AIRLINE",
+      "statistic": "EXPERT_CERTIFICATION",
+      "review_count": null,
+      "route_median": null
+    },
+    "source_url": "https://skytraxratings.com/airlines/air-india-express-rating",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "QP-RATING_COVERAGE-missing",
+    "airline": "QP",
+    "kind": "RATING_COVERAGE",
+    "payload": {
+      "status": "NOT_VERIFIED",
+      "reason": "No comparable expert star certification verified; no route-level review sample available."
+    },
+    "source_url": "https://skytraxratings.com/a-z-of-airline-ratings",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "6E-SEAT_CONFIGURATION-ATR72-78",
+    "airline": "6E",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "ATR72",
+      "total_seats": 78,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://www.goindigo.in/aircraft-and-fleet.html",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "6E-SEAT_CONFIGURATION-A320ceo-180",
+    "airline": "6E",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "A320ceo",
+      "total_seats": 180,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://www.goindigo.in/aircraft-and-fleet.html",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "6E-SEAT_CONFIGURATION-A320neo-180",
+    "airline": "6E",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "A320neo",
+      "total_seats": 180,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://www.goindigo.in/aircraft-and-fleet.html",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "6E-SEAT_CONFIGURATION-A320neo-186",
+    "airline": "6E",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "A320neo",
+      "total_seats": 186,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://www.goindigo.in/aircraft-and-fleet.html",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "6E-SEAT_CONFIGURATION-A321-222",
+    "airline": "6E",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "A321",
+      "total_seats": 222,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://www.goindigo.in/aircraft-and-fleet.html",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "6E-SEAT_CONFIGURATION-A321-232",
+    "airline": "6E",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "A321",
+      "total_seats": 232,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://www.goindigo.in/aircraft-and-fleet.html",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "QP-SEAT_CONFIGURATION-B737-8-189",
+    "airline": "QP",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "B737-8",
+      "total_seats": 189,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://www.akasaair.com/add-ons/seat-select",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "QP-SEAT_CONFIGURATION-B737-8-194",
+    "airline": "QP",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "B737-8",
+      "total_seats": 194,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://www.akasaair.com/add-ons/seat-select",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "QP-SEAT_CONFIGURATION-B737-8-197",
+    "airline": "QP",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "B737-8",
+      "total_seats": 197,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://www.akasaair.com/add-ons/seat-select",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "QP-SEAT_CONFIGURATION-B737-8-186",
+    "airline": "QP",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "B737-8",
+      "total_seats": 186,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://www.akasaair.com/add-ons/seat-select",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SEAT_CONFIGURATION-B737-800-189",
+    "airline": "SG",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "B737-800",
+      "total_seats": 189,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://corporate.spicejet.com/Fleet.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SEAT_CONFIGURATION-B737-800-186",
+    "airline": "SG",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "B737-800",
+      "total_seats": 186,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://corporate.spicejet.com/Fleet.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SEAT_CONFIGURATION-B737-900ER-212",
+    "airline": "SG",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "B737-900ER",
+      "total_seats": 212,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://corporate.spicejet.com/Fleet.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SEAT_CONFIGURATION-B737-MAX8-189",
+    "airline": "SG",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "B737-MAX8",
+      "total_seats": 189,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT"
+    },
+    "source_url": "https://corporate.spicejet.com/Fleet.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "IX-SEAT_CONFIGURATION-B737-8-retrofitted-189",
+    "airline": "IX",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "B737-8 retrofitted",
+      "total_seats": 189,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT",
+      "note": "Retrofit configuration; not the entire fleet."
+    },
+    "source_url": "https://www.tata.com/newsroom/business/vt-rnt-air-india-express",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "AI-SEAT_CONFIGURATION-A320neo-VT-RTN-configuration-164",
+    "airline": "AI",
+    "kind": "SEAT_CONFIGURATION",
+    "payload": {
+      "aircraft": "A320neo VT-RTN configuration",
+      "total_seats": 164,
+      "scope": "PUBLISHED_CONFIGURATION",
+      "assignment": "NOT_VERIFIED_FOR_SIMULATED_FLIGHT",
+      "cabins": {
+        "ECONOMY": 132,
+        "PREMIUM_ECONOMY": 24,
+        "BUSINESS": 8
+      },
+      "published_on": "2024-07-18"
+    },
+    "source_url": "https://www.airindia.com/in/en/newsroom/press-release/a320neo-new-livery-cabin.html",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-CERTIFICATION-skytrax",
+    "airline": "SG",
+    "kind": "CERTIFICATION",
+    "payload": {
+      "value": 3,
+      "scale": 5,
+      "provider": "Skytrax",
+      "scope": "AIRLINE",
+      "statistic": "EXPERT_CERTIFICATION",
+      "review_count": null,
+      "route_median": null
+    },
+    "source_url": "https://skytraxratings.com/airlines/spicejet-rating",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-63f96343fad913e4c811",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "AMD-DEL",
+      "flight_number": "SG 8194",
+      "departure_IST": "05:30",
+      "arrival_IST": "07:00",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-38f74827011e1b6c8163",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "AMD-DEL",
+      "flight_number": "SG  130",
+      "departure_IST": "06:50",
+      "arrival_IST": "08:30",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-fdeba0ed9f6c8440a0ca",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "AMD-BOM",
+      "flight_number": "SG  655",
+      "departure_IST": "07:00",
+      "arrival_IST": "08:20",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-12",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-391e89ce15fb31bb1ffc",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-DEL",
+      "flight_number": "SG  141",
+      "departure_IST": "06:10",
+      "arrival_IST": "09:00",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-25",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-2a9984c7bd5c53951173",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-DEL",
+      "flight_number": "SG  722",
+      "departure_IST": "12:40",
+      "arrival_IST": "15:20",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-c02db739e89656e4e62a",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-DEL",
+      "flight_number": "SG  722",
+      "departure_IST": "12:40",
+      "arrival_IST": "15:20",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-11-06",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-b98651a6bca02adf47e0",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-DEL",
+      "flight_number": "SG  619",
+      "departure_IST": "21:30",
+      "arrival_IST": "00:30",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-e4a734eabe55c58c51b5",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-CCU",
+      "flight_number": "SG  645",
+      "departure_IST": "06:00",
+      "arrival_IST": "08:30",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-c56e92e453370994832b",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-CCU",
+      "flight_number": "SG  645",
+      "departure_IST": "06:00",
+      "arrival_IST": "08:30",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-11-11",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-a8a3400339ffb96fb0bf",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-CCU",
+      "flight_number": "SG  645",
+      "departure_IST": "06:00",
+      "arrival_IST": "08:30",
+      "operating_days": "Sat",
+      "valid_from": "2026-10-31",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-083fbdffc13c318f6f7c",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-CCU",
+      "flight_number": "SG  645",
+      "departure_IST": "06:00",
+      "arrival_IST": "08:30",
+      "operating_days": "Mon/Tue/Wed/Fri/Sun",
+      "valid_from": "2026-11-12",
+      "valid_to": "2026-11-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-22e13e5b5facf1f9c462",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-CCU",
+      "flight_number": "SG  645",
+      "departure_IST": "06:00",
+      "arrival_IST": "08:30",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-11-27",
+      "valid_to": "2027-03-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-60eaeb745475d1a2f31f",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  269",
+      "departure_IST": "21:35",
+      "arrival_IST": "23:30",
+      "operating_days": "Tue/Sat",
+      "valid_from": "2026-10-25",
+      "valid_to": "2026-11-06",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-b55433b001c8af5efbe5",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  640",
+      "departure_IST": "05:50",
+      "arrival_IST": "07:50",
+      "operating_days": "Mon/Wed/Thu/Fri/Sat/Sun",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-5cb90c62b3624a0f72bc",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  269",
+      "departure_IST": "21:35",
+      "arrival_IST": "23:30",
+      "operating_days": "Mon/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-6aeb83c3c34edbace3a7",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  633",
+      "departure_IST": "23:20",
+      "arrival_IST": "01:20",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-fe954f29428da644a09d",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  640",
+      "departure_IST": "05:50",
+      "arrival_IST": "07:50",
+      "operating_days": "Mon/Wed/Thu/Fri/Sat/Sun",
+      "valid_from": "2026-10-27",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-38245bebff317e7c4c6d",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  640",
+      "departure_IST": "13:50",
+      "arrival_IST": "15:50",
+      "operating_days": "Tue",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-10-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-c7076f1c3abe9634244e",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  269",
+      "departure_IST": "21:35",
+      "arrival_IST": "23:30",
+      "operating_days": "Mon/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-10-28",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-f30d41318535c0c00bc9",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  633",
+      "departure_IST": "23:20",
+      "arrival_IST": "01:20",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-10-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-fa26e5c42825d474f524",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  633",
+      "departure_IST": "23:20",
+      "arrival_IST": "01:20",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-28",
+      "valid_to": "2026-10-30",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-00161931c60ec5a41ef7",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  115",
+      "departure_IST": "07:20",
+      "arrival_IST": "09:20",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-29",
+      "valid_to": "2026-10-30",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-08f099510bd580db28f6",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  269",
+      "departure_IST": "21:35",
+      "arrival_IST": "23:30",
+      "operating_days": "Mon/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-30",
+      "valid_to": "2026-11-04",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-aa8be75ca3a3df302128",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  115",
+      "departure_IST": "07:20",
+      "arrival_IST": "09:20",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-31",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-8d5c72a7d0b1b72dfd19",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  633",
+      "departure_IST": "23:20",
+      "arrival_IST": "01:20",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-31",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-03e16aceb3d67d472934",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  640",
+      "departure_IST": "13:50",
+      "arrival_IST": "15:50",
+      "operating_days": "Tue",
+      "valid_from": "2026-11-03",
+      "valid_to": "2026-11-24",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-c28f2ff8197db04b6be1",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  269",
+      "departure_IST": "21:35",
+      "arrival_IST": "23:30",
+      "operating_days": "Mon/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-11-06",
+      "valid_to": "2026-11-06",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-5207e8e3d1f559e93156",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  269",
+      "departure_IST": "12:40",
+      "arrival_IST": "14:35",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-946c1e7a5d5710912111",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BLR-BOM",
+      "flight_number": "SG  640",
+      "departure_IST": "06:10",
+      "arrival_IST": "08:10",
+      "operating_days": "Tue",
+      "valid_from": "2026-11-25",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-3cc2f505e85a44df6af0",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "MAA-DEL",
+      "flight_number": "SG 9701",
+      "departure_IST": "10:00",
+      "arrival_IST": "12:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-29",
+      "valid_to": "2026-10-29",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-ec1f626a25db84658f60",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-AMD",
+      "flight_number": "SG  762",
+      "departure_IST": "16:00",
+      "arrival_IST": "17:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-2b480d6d51683d72fc02",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-AMD",
+      "flight_number": "SG 8193",
+      "departure_IST": "22:00",
+      "arrival_IST": "23:35",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-74efb2c0dcbe77bbd51d",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BLR",
+      "flight_number": "SG  142",
+      "departure_IST": "21:25",
+      "arrival_IST": "00:25",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-25",
+      "valid_to": "2026-10-30",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-0e49247486ee111746ed",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BLR",
+      "flight_number": "SG  723",
+      "departure_IST": "16:10",
+      "arrival_IST": "18:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-7693a57c4fba5190b981",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BLR",
+      "flight_number": "SG  723",
+      "departure_IST": "16:10",
+      "arrival_IST": "18:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-11-06",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-9c1e166dd55203fd3a66",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BLR",
+      "flight_number": "SG  142",
+      "departure_IST": "16:30",
+      "arrival_IST": "19:30",
+      "operating_days": "Sat",
+      "valid_from": "2026-10-31",
+      "valid_to": "2026-11-28",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-a5151a79042b33e2f138",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BLR",
+      "flight_number": "SG  142",
+      "departure_IST": "21:25",
+      "arrival_IST": "00:25",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-31",
+      "valid_to": "2026-11-28",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-4a8a6128eb6c7ea14cf4",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BLR",
+      "flight_number": "SG  614",
+      "departure_IST": "06:30",
+      "arrival_IST": "09:30",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-71c8d10a1d98db935c64",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BLR",
+      "flight_number": "SG  142",
+      "departure_IST": "21:25",
+      "arrival_IST": "00:25",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-29",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-e1f58ad6fb5081c76796",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-MAA",
+      "flight_number": "SG 9700",
+      "departure_IST": "04:00",
+      "arrival_IST": "07:00",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2026-10-28",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-1c25eb0647b6d2e93da9",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-GAU",
+      "flight_number": "SG  903",
+      "departure_IST": "09:30",
+      "arrival_IST": "12:00",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-05",
+      "valid_to": "2026-11-06",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-9ec8eda188d09c29b0f7",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-GAU",
+      "flight_number": "SG  761",
+      "departure_IST": "09:10",
+      "arrival_IST": "11:45",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-b9110709aba553338ad5",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-GAU",
+      "flight_number": "SG  903",
+      "departure_IST": "06:00",
+      "arrival_IST": "08:15",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-14",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-a8b851182620b50c5c1c",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-HYD",
+      "flight_number": "SG  696",
+      "departure_IST": "22:40",
+      "arrival_IST": "00:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-20",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-ab8ee2b6e7e1747c55e1",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-CCU",
+      "flight_number": "SG  263",
+      "departure_IST": "07:00",
+      "arrival_IST": "09:25",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-7b33a897c22eeaa3fc3c",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG 2612",
+      "departure_IST": "19:20",
+      "arrival_IST": "22:10",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-25",
+      "valid_to": "2026-10-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-efc0831859a3aed08702",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  671",
+      "departure_IST": "05:40",
+      "arrival_IST": "08:00",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-bde1d9a9a319cdaef2ba",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  671",
+      "departure_IST": "05:40",
+      "arrival_IST": "08:00",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-10-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-2abb98b2b7ce951167dc",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  612",
+      "departure_IST": "19:20",
+      "arrival_IST": "21:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-dd950040f3495c93c09f",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  671",
+      "departure_IST": "07:00",
+      "arrival_IST": "09:15",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-29",
+      "valid_to": "2026-11-06",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-973e8f4aff808ed130db",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  211",
+      "departure_IST": "09:50",
+      "arrival_IST": "12:10",
+      "operating_days": "Sat",
+      "valid_from": "2026-10-31",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-6c82c56495ee49500f3d",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  476",
+      "departure_IST": "16:25",
+      "arrival_IST": "18:45",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-05",
+      "valid_to": "2026-11-06",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-2db5330a1c53b4d1355c",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  603",
+      "departure_IST": "05:45",
+      "arrival_IST": "08:05",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-7dccf2698f9df8ca9218",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  510",
+      "departure_IST": "06:20",
+      "arrival_IST": "08:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-adf79684e6fe25f609b0",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  671",
+      "departure_IST": "07:00",
+      "arrival_IST": "09:15",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-308a7ed426b7c9db888c",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  476",
+      "departure_IST": "09:30",
+      "arrival_IST": "11:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-a7fa43467702d3fbd76e",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  475",
+      "departure_IST": "17:20",
+      "arrival_IST": "19:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-14",
+      "valid_to": "2026-11-14",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-0d8ccd9f7e5e4832a31b",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  475",
+      "departure_IST": "17:20",
+      "arrival_IST": "19:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-15",
+      "valid_to": "2026-11-29",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-cf0e923b88904f43292f",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-BOM",
+      "flight_number": "SG  475",
+      "departure_IST": "17:20",
+      "arrival_IST": "19:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-30",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-e5c17b6cb5bc74cd2f3c",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PAT",
+      "flight_number": "SG 2608",
+      "departure_IST": "07:00",
+      "arrival_IST": "09:10",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-25",
+      "valid_to": "2026-10-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-9396af2172b1d91a0747",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PAT",
+      "flight_number": "SG  709",
+      "departure_IST": "14:50",
+      "arrival_IST": "16:45",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-25",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-9f7006b2d0dda6b12d47",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PAT",
+      "flight_number": "SG 2608",
+      "departure_IST": "07:00",
+      "arrival_IST": "09:20",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2026-10-28",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-4d13b7845acb68311f8d",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PAT",
+      "flight_number": "SG  608",
+      "departure_IST": "07:00",
+      "arrival_IST": "09:00",
+      "operating_days": "Mon/Tue/Wed/Fri/Sat/Sun",
+      "valid_from": "2026-10-30",
+      "valid_to": "2026-11-16",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-9e76fee13ce1e177697c",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PAT",
+      "flight_number": "SG  608",
+      "departure_IST": "07:00",
+      "arrival_IST": "09:00",
+      "operating_days": "Mon/Tue/Wed/Fri/Sat/Sun",
+      "valid_from": "2026-11-17",
+      "valid_to": "2026-11-30",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-e6692276589b97b016a1",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PAT",
+      "flight_number": "SG  608",
+      "departure_IST": "07:00",
+      "arrival_IST": "09:00",
+      "operating_days": "Daily",
+      "valid_from": "2026-12-01",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-a106f47e10a22604431b",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PNQ",
+      "flight_number": "SG  186",
+      "departure_IST": "09:50",
+      "arrival_IST": "12:10",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-25",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-5c0cc48fc970f30bb29b",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PNQ",
+      "flight_number": "SG  939",
+      "departure_IST": "17:00",
+      "arrival_IST": "19:10",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-906c3db8656f12639827",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PNQ",
+      "flight_number": "SG  105",
+      "departure_IST": "21:00",
+      "arrival_IST": "23:10",
+      "operating_days": "Tue/Wed/Thu/Fri/Sat/Sun",
+      "valid_from": "2026-10-29",
+      "valid_to": "2026-11-15",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-860b3c4496e0ee61ac27",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PNQ",
+      "flight_number": "SG  600",
+      "departure_IST": "20:00",
+      "arrival_IST": "22:10",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-05",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-9631b05a13b2250d71bc",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PNQ",
+      "flight_number": "SG  105",
+      "departure_IST": "21:00",
+      "arrival_IST": "23:10",
+      "operating_days": "Tue/Wed/Thu/Fri/Sat/Sun",
+      "valid_from": "2026-11-16",
+      "valid_to": "2026-11-30",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-c49b784a3f882b0a4e2e",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-PNQ",
+      "flight_number": "SG  105",
+      "departure_IST": "21:00",
+      "arrival_IST": "23:10",
+      "operating_days": "Daily",
+      "valid_from": "2026-12-01",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-0bcf3942c83feece3558",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-SXR",
+      "flight_number": "SG  904",
+      "departure_IST": "11:55",
+      "arrival_IST": "13:25",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-5adb675a66f17bf6e9e5",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-SXR",
+      "flight_number": "SG  904",
+      "departure_IST": "11:55",
+      "arrival_IST": "13:25",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2026-10-28",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-7ad21903b978b46fceba",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-SXR",
+      "flight_number": "SG  904",
+      "departure_IST": "11:55",
+      "arrival_IST": "13:25",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-29",
+      "valid_to": "2026-10-29",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-25e6a01a1dc51f8e436a",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-SXR",
+      "flight_number": "SG  904",
+      "departure_IST": "11:55",
+      "arrival_IST": "13:25",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-30",
+      "valid_to": "2026-10-31",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-d02800c5d2ba159b4459",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-SXR",
+      "flight_number": "SG  904",
+      "departure_IST": "11:55",
+      "arrival_IST": "13:25",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sat",
+      "valid_from": "2026-11-01",
+      "valid_to": "2027-03-21",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-c0d3050157fcd5a675c9",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-SXR",
+      "flight_number": "SG  199",
+      "departure_IST": "12:45",
+      "arrival_IST": "14:15",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sat",
+      "valid_from": "2026-11-14",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-df3f38f3ad246db64edd",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-SXR",
+      "flight_number": "SG  199",
+      "departure_IST": "12:45",
+      "arrival_IST": "14:15",
+      "operating_days": "Sun",
+      "valid_from": "2026-11-30",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-70804e151f214ee6f2fd",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-SXR",
+      "flight_number": "SG  904",
+      "departure_IST": "11:55",
+      "arrival_IST": "13:25",
+      "operating_days": "Sun",
+      "valid_from": "2027-01-25",
+      "valid_to": "2027-03-21",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-17e34cfd48093e79af2e",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "DEL-SXR",
+      "flight_number": "SG  904",
+      "departure_IST": "11:55",
+      "arrival_IST": "13:25",
+      "operating_days": "Daily",
+      "valid_from": "2027-03-22",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-9d631560b0bcce360f9d",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "GAU-DEL",
+      "flight_number": "SG  199",
+      "departure_IST": "12:50",
+      "arrival_IST": "15:35",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-05",
+      "valid_to": "2026-11-06",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-1e97c18606dbedb03726",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "GAU-DEL",
+      "flight_number": "SG  762",
+      "departure_IST": "12:30",
+      "arrival_IST": "15:15",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-3c9d7f5ccb7a891ee772",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "GAU-DEL",
+      "flight_number": "SG  199",
+      "departure_IST": "08:55",
+      "arrival_IST": "11:55",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sat",
+      "valid_from": "2026-11-14",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-6dae560b231eff0983cb",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "GAU-DEL",
+      "flight_number": "SG  199",
+      "departure_IST": "08:55",
+      "arrival_IST": "11:55",
+      "operating_days": "Sun",
+      "valid_from": "2026-11-15",
+      "valid_to": "2026-11-29",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-3990deacea7136b9b255",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "GAU-DEL",
+      "flight_number": "SG  199",
+      "departure_IST": "08:55",
+      "arrival_IST": "11:55",
+      "operating_days": "Sun",
+      "valid_from": "2026-11-30",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-0eb4311590d39aad5476",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "HYD-DEL",
+      "flight_number": "SG  695",
+      "departure_IST": "19:30",
+      "arrival_IST": "21:55",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-20",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-aac8c91152f604c3ff81",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "CCU-BLR",
+      "flight_number": "SG  648",
+      "departure_IST": "09:20",
+      "arrival_IST": "11:50",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-20498b6edaf7ee760b31",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "CCU-BLR",
+      "flight_number": "SG  648",
+      "departure_IST": "09:20",
+      "arrival_IST": "11:50",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-11-11",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-fb85be7b6ffbc518f692",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "CCU-BLR",
+      "flight_number": "SG  648",
+      "departure_IST": "09:20",
+      "arrival_IST": "11:50",
+      "operating_days": "Sat",
+      "valid_from": "2026-10-31",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-c0aaf222c81bba691556",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "CCU-BLR",
+      "flight_number": "SG  648",
+      "departure_IST": "09:20",
+      "arrival_IST": "11:50",
+      "operating_days": "Mon/Tue/Wed/Fri/Sun",
+      "valid_from": "2026-11-12",
+      "valid_to": "2026-11-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-8fa1f92997ceb849dd23",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "CCU-BLR",
+      "flight_number": "SG  648",
+      "departure_IST": "09:20",
+      "arrival_IST": "11:50",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-11-27",
+      "valid_to": "2027-03-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-24af0db213b1a12c5d46",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "CCU-DEL",
+      "flight_number": "SG  254",
+      "departure_IST": "16:10",
+      "arrival_IST": "18:35",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-a068d57477942c78cef5",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "CCU-BOM",
+      "flight_number": "SG  487",
+      "departure_IST": "17:00",
+      "arrival_IST": "19:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-7bae323f5a95ef0e64ad",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "CCU-BOM",
+      "flight_number": "SG  487",
+      "departure_IST": "17:00",
+      "arrival_IST": "19:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-10-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-3abfc5912a144e31ec78",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "CCU-BOM",
+      "flight_number": "SG  487",
+      "departure_IST": "17:00",
+      "arrival_IST": "19:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2026-10-30",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-b1ba7853b71911ecfd56",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "CCU-BOM",
+      "flight_number": "SG  487",
+      "departure_IST": "17:00",
+      "arrival_IST": "19:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-31",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-076e979d8fc914cd8f3a",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-AMD",
+      "flight_number": "SG  661",
+      "departure_IST": "22:30",
+      "arrival_IST": "23:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-12",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-f1f84d19bd3e5442ddcc",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  669",
+      "departure_IST": "00:30",
+      "arrival_IST": "02:30",
+      "operating_days": "Tue/Sat",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-11-06",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-f0c593edc521d10ecfd3",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  669",
+      "departure_IST": "00:30",
+      "arrival_IST": "02:30",
+      "operating_days": "Mon/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-29",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-84a7323c6227af233539",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  487",
+      "departure_IST": "20:40",
+      "arrival_IST": "22:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-06abdc264aaab9528431",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  676",
+      "departure_IST": "22:30",
+      "arrival_IST": "00:30",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-b67838414285044e464e",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  487",
+      "departure_IST": "20:40",
+      "arrival_IST": "22:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-10-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-e87e9e44079fdea72abe",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  676",
+      "departure_IST": "22:30",
+      "arrival_IST": "00:30",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-10-30",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-ddeeafc55be47833294e",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  487",
+      "departure_IST": "20:40",
+      "arrival_IST": "22:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2026-10-30",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-4a0cf80779a5db60accc",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  556",
+      "departure_IST": "04:00",
+      "arrival_IST": "06:00",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-29",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-b004f7875a767421bce5",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  669",
+      "departure_IST": "00:30",
+      "arrival_IST": "02:30",
+      "operating_days": "Mon/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-31",
+      "valid_to": "2026-11-05",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-59fec128d4aca301a1e9",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  487",
+      "departure_IST": "20:40",
+      "arrival_IST": "22:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-31",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-b9f56c15dc6494afeefd",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  676",
+      "departure_IST": "22:30",
+      "arrival_IST": "00:30",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-31",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-0119a610601c381f5b2d",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-BLR",
+      "flight_number": "SG  669",
+      "departure_IST": "00:30",
+      "arrival_IST": "02:30",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-d68b0616bc6839bb66a9",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG 2613",
+      "departure_IST": "23:10",
+      "arrival_IST": "02:00",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-25",
+      "valid_to": "2026-10-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-bbcd130b7f50e08ce021",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG  670",
+      "departure_IST": "22:55",
+      "arrival_IST": "01:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-9537bca03ac417b11390",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG  670",
+      "departure_IST": "22:55",
+      "arrival_IST": "01:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-10-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-f8e25a0bc4c458e735c9",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG  613",
+      "departure_IST": "22:30",
+      "arrival_IST": "00:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-0143448459c795f6714b",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG  670",
+      "departure_IST": "23:20",
+      "arrival_IST": "02:05",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2026-11-06",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-f97ccce9cc83c7f1ef79",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG  212",
+      "departure_IST": "13:10",
+      "arrival_IST": "15:30",
+      "operating_days": "Sat",
+      "valid_from": "2026-10-31",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-89d8231aa488f6036f0a",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG  252",
+      "departure_IST": "06:25",
+      "arrival_IST": "08:45",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-05",
+      "valid_to": "2026-11-06",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-7931974b27785c8ef7ae",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG  252",
+      "departure_IST": "06:25",
+      "arrival_IST": "08:45",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-54eb439ff26313ef52ad",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG  602",
+      "departure_IST": "08:45",
+      "arrival_IST": "11:05",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-1ed335972fc15d2e371e",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG  511",
+      "departure_IST": "23:20",
+      "arrival_IST": "01:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-5cd2ecd78a265326a8a8",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG  670",
+      "departure_IST": "23:20",
+      "arrival_IST": "02:05",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-07",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-c9448894d5029bd587ee",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-DEL",
+      "flight_number": "SG  611",
+      "departure_IST": "20:30",
+      "arrival_IST": "22:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-14",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-076a9f5ee2871f0dff49",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-CCU",
+      "flight_number": "SG  488",
+      "departure_IST": "07:30",
+      "arrival_IST": "10:15",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-a34400497e0c4f3d1d29",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-CCU",
+      "flight_number": "SG  488",
+      "departure_IST": "07:30",
+      "arrival_IST": "10:15",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-27",
+      "valid_to": "2026-10-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-546ab35b71dfd21ad292",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "BOM-CCU",
+      "flight_number": "SG  488",
+      "departure_IST": "07:30",
+      "arrival_IST": "10:15",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-aa16729e558dbc9d5223",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PAT-DEL",
+      "flight_number": "SG 2609",
+      "departure_IST": "09:40",
+      "arrival_IST": "11:50",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-25",
+      "valid_to": "2026-10-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-42c92c968b8ade784025",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PAT-DEL",
+      "flight_number": "SG  710",
+      "departure_IST": "23:15",
+      "arrival_IST": "01:10",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-25",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-69c87327092a62264bea",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PAT-DEL",
+      "flight_number": "SG 2609",
+      "departure_IST": "09:50",
+      "arrival_IST": "12:10",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-28",
+      "valid_to": "2026-10-28",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-878ca06779db86ac2863",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PAT-DEL",
+      "flight_number": "SG  609",
+      "departure_IST": "09:45",
+      "arrival_IST": "11:40",
+      "operating_days": "Mon/Tue/Wed/Fri/Sat/Sun",
+      "valid_from": "2026-10-30",
+      "valid_to": "2026-11-16",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-6f34175851cdf919005b",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PAT-DEL",
+      "flight_number": "SG  609",
+      "departure_IST": "09:45",
+      "arrival_IST": "11:40",
+      "operating_days": "Mon/Tue/Wed/Fri/Sat/Sun",
+      "valid_from": "2026-11-17",
+      "valid_to": "2026-11-30",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-2ac5e3765a2109a5b74a",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PAT-DEL",
+      "flight_number": "SG  609",
+      "departure_IST": "09:45",
+      "arrival_IST": "11:40",
+      "operating_days": "Daily",
+      "valid_from": "2026-12-01",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-a2d628e75aee3241ffab",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PNQ-DEL",
+      "flight_number": "SG  184",
+      "departure_IST": "18:15",
+      "arrival_IST": "20:35",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sun",
+      "valid_from": "2026-10-25",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-ab7dc2613eaff92f93d6",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PNQ-DEL",
+      "flight_number": "SG  937",
+      "departure_IST": "05:50",
+      "arrival_IST": "08:10",
+      "operating_days": "Daily",
+      "valid_from": "2026-10-29",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-6c1a89c9d245c97db9ea",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PNQ-DEL",
+      "flight_number": "SG  106",
+      "departure_IST": "23:55",
+      "arrival_IST": "02:15",
+      "operating_days": "Tue/Wed/Thu/Fri/Sat/Sun",
+      "valid_from": "2026-10-29",
+      "valid_to": "2026-11-15",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-e27f7ce58e671214a28e",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PNQ-DEL",
+      "flight_number": "SG  601",
+      "departure_IST": "22:50",
+      "arrival_IST": "01:10",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-05",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-173d3ff0a541c9f0e155",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PNQ-DEL",
+      "flight_number": "SG  106",
+      "departure_IST": "23:55",
+      "arrival_IST": "02:15",
+      "operating_days": "Tue/Wed/Thu/Fri/Sat/Sun",
+      "valid_from": "2026-11-16",
+      "valid_to": "2026-11-30",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-1181fa5176543298bb60",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "PNQ-DEL",
+      "flight_number": "SG  106",
+      "departure_IST": "23:55",
+      "arrival_IST": "02:15",
+      "operating_days": "Daily",
+      "valid_from": "2026-12-01",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-d5f9b6ddcdcc33f2e8c7",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "SXR-DEL",
+      "flight_number": "SG  181",
+      "departure_IST": "13:55",
+      "arrival_IST": "15:25",
+      "operating_days": "Mon/Wed/Thu/Fri/Sat",
+      "valid_from": "2026-10-26",
+      "valid_to": "2026-10-26",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-0f9ef4b68e4ff4947f1c",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "SXR-DEL",
+      "flight_number": "SG  181",
+      "departure_IST": "13:55",
+      "arrival_IST": "15:25",
+      "operating_days": "Tue",
+      "valid_from": "2026-10-28",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-0debf6f487137a3fa2d1",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "SXR-DEL",
+      "flight_number": "SG  181",
+      "departure_IST": "13:55",
+      "arrival_IST": "15:25",
+      "operating_days": "Mon/Wed/Thu/Fri/Sat",
+      "valid_from": "2026-10-28",
+      "valid_to": "2026-10-28",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-1aba78f57ac3d6f7d08b",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "SXR-DEL",
+      "flight_number": "SG  181",
+      "departure_IST": "13:55",
+      "arrival_IST": "15:25",
+      "operating_days": "Mon/Wed/Thu/Fri/Sat",
+      "valid_from": "2026-10-29",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-477d52e157cb66003923",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "SXR-DEL",
+      "flight_number": "SG  475",
+      "departure_IST": "15:00",
+      "arrival_IST": "16:30",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-14",
+      "valid_to": "2026-11-14",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-a16888dbd3e24c7b2a8f",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "SXR-DEL",
+      "flight_number": "SG  475",
+      "departure_IST": "15:00",
+      "arrival_IST": "16:30",
+      "operating_days": "Mon/Tue/Wed/Thu/Fri/Sat",
+      "valid_from": "2026-11-15",
+      "valid_to": "2026-11-29",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-0260ce8503b368ce9421",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "SXR-DEL",
+      "flight_number": "SG  475",
+      "departure_IST": "15:00",
+      "arrival_IST": "16:30",
+      "operating_days": "Daily",
+      "valid_from": "2026-11-30",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  },
+  {
+    "id": "SG-SCHEDULE-b0bea94464a0bdae90ec",
+    "airline": "SG",
+    "kind": "SCHEDULE",
+    "payload": {
+      "route": "SXR-DEL",
+      "flight_number": "SG  181",
+      "departure_IST": "14:05",
+      "arrival_IST": "15:35",
+      "operating_days": "Sun",
+      "valid_from": "2027-01-25",
+      "valid_to": "2027-03-27",
+      "scope": "PUBLISHED_TIMETABLE_NOT_LIVE_STATUS"
+    },
+    "source_url": "https://corporate.spicejet.com/Schedules.aspx",
+    "checked_on": "2026-10-26"
+  }
+]

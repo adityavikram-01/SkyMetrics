@@ -1,0 +1,17 @@
+.env
+**/.env
+.runtime/
+.run/
+.idea/
+**/target/
+**/node_modules/
+**/dist/
+**/*.log
+docker/mysql/init/*.sql.gz
+review-snapshot.sql.gz
+
+# Local/generated datasets excluded from deployment history
+airfare_mimic/output/
+**/*.sqlite
+**/*.db
+**/*.sql.gz

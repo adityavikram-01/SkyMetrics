@@ -1,0 +1,69 @@
+name: skymetrics-platform
+
+services:
+  database:
+    build:
+      context: ./docker/mysql
+    image: skymetrics-database:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: ${SKYMETRICS_DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: apix_prototype
+      MYSQL_USER: skymetrics
+      MYSQL_PASSWORD: ${SKYMETRICS_DB_PASSWORD}
+    volumes:
+      - skymetrics_mysql_data:/var/lib/mysql
+    ports:
+      - "127.0.0.1:3309:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-u", "skymetrics", "-p${SKYMETRICS_DB_PASSWORD}"]
+      interval: 10s
+      timeout: 5s
+      retries: 60
+      start_period: 60s
+    restart: unless-stopped
+
+  backend:
+    build:
+      context: ./apix-backend
+      dockerfile: Dockerfile
+    image: skymetrics-backend:latest
+    environment:
+      SERVER_ADDRESS: 0.0.0.0
+      SERVER_PORT: 8080
+      DB_URL: jdbc:mysql://database:3306/apix_prototype?connectionTimeZone=UTC&forceConnectionTimeZoneToSession=true&rewriteBatchedStatements=true
+      DB_USERNAME: skymetrics
+      DB_PASSWORD: ${SKYMETRICS_DB_PASSWORD}
+      SKYMETRICS_BOOTSTRAP_ADMIN_EMAIL: ${SKYMETRICS_BOOTSTRAP_ADMIN_EMAIL:-}
+      SKYMETRICS_BOOTSTRAP_ADMIN_PASSWORD: ${SKYMETRICS_BOOTSTRAP_ADMIN_PASSWORD:-}
+      SKYMETRICS_OWNER_EMAIL: ${SKYMETRICS_OWNER_EMAIL:-}
+      SKYMETRICS_MAIL_FROM: ${SKYMETRICS_MAIL_FROM:-}
+      SKYMETRICS_SMTP_HOST: ${SKYMETRICS_SMTP_HOST:-}
+      SKYMETRICS_SMTP_PORT: ${SKYMETRICS_SMTP_PORT:-587}
+      SKYMETRICS_SMTP_USERNAME: ${SKYMETRICS_SMTP_USERNAME:-}
+      SKYMETRICS_SMTP_PASSWORD: ${SKYMETRICS_SMTP_PASSWORD:-}
+    depends_on:
+      database:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:8081:8080"
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:8080/api/v1/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./apix-frontend
+      dockerfile: Dockerfile
+    image: skymetrics-frontend:latest
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:5174:80"
+    restart: unless-stopped
+
+volumes:
+  skymetrics_mysql_data:

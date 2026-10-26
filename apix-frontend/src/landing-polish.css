@@ -1,0 +1,26 @@
+.platform-home-hero .landing-copy{animation:landing-rise .65s ease both}
+.platform-home-hero .landing-map{animation:landing-rise .75s .12s ease both;background:#233238;border:1px solid #384e50;box-shadow:0 24px 55px #172c321e}
+.landing-map:before{background-image:linear-gradient(#fff7e808 1px,transparent 1px),linear-gradient(90deg,#fff7e808 1px,transparent 1px);opacity:.7}
+.landing-map svg image{opacity:.82;filter:sepia(.35) saturate(.65) hue-rotate(-23deg) brightness(1.08)}
+.landing-map-head>span,.landing-map-foot{color:#c2ceca}
+.landing-map-head strong{color:#fff5ec}
+.landing-map-path{stroke:#f3a777;stroke-width:2.4;filter:drop-shadow(0 0 6px #f3a777);animation:landing-route-pop .7s ease both,route-flow 14s linear infinite}
+.landing-map-halo{fill:#e9874829;stroke:#f2a6759c}
+.landing-map-destination{transform-box:fill-box;transform-origin:center;animation:landing-node-pulse 2.8s ease-in-out infinite}
+.landing-map-node{fill:#ffbe91;stroke:#fff8f0}
+.landing-map-traveller{fill:#fff8ef;filter:drop-shadow(0 0 6px #ffbd8f)}
+.landing-map svg text{stroke:#233238}
+.landing-quick-search a{display:inline-flex;align-items:center;justify-content:center;width:auto;min-width:116px;padding:0 12px;gap:7px;white-space:nowrap;font-size:11px;font-weight:800;text-decoration:none}
+.landing-quick-search a:hover{background:#a94f32;transform:translateX(2px)}
+.landing-route-picks{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:16px}
+.landing-route-picks>span{font-size:9px;font-weight:800;letter-spacing:1.3px;color:#7b898d;margin-right:4px}
+.landing-route-picks button{display:inline-flex;align-items:center;gap:5px;border:1px solid #d4dddc;border-radius:22px;background:#fffdf9;padding:8px 10px;color:#344951;font-size:10px;font-weight:800;cursor:pointer;transition:transform .18s,border-color .18s,background .18s}
+.landing-route-picks button:hover{transform:translateY(-2px);border-color:#c4613d}
+.landing-route-picks button.selected{background:#f8e8db;border-color:#d79a7a;color:#9d442a}
+.landing-benefits>div{animation:landing-rise .6s ease both}
+.landing-benefits>div:nth-child(1){animation-delay:.16s}.landing-benefits>div:nth-child(2){animation-delay:.25s}.landing-benefits>div:nth-child(3){animation-delay:.34s}
+@keyframes landing-rise{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+@keyframes landing-route-pop{from{opacity:0;stroke-width:0}to{opacity:1;stroke-width:2.4}}
+@keyframes landing-node-pulse{50%{transform:scale(1.55);opacity:.45}}
+@media(max-width:620px){.landing-quick-search>div{align-items:stretch}.landing-quick-search a{min-width:98px;justify-content:center}.landing-route-picks{gap:6px}.landing-route-picks>span{width:100%}}
+@media(prefers-reduced-motion:reduce){.platform-home-hero .landing-copy,.platform-home-hero .landing-map,.landing-benefits>div,.landing-map-path,.landing-map-destination{animation:none!important}.landing-map-traveller{display:none}.landing-route-picks button,.landing-quick-search a{transition:none}}

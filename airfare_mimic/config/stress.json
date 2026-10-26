@@ -1,0 +1,1140 @@
+{
+  "model_version": "0.1.0",
+  "seed": 20260913,
+  "end_date": "2026-09-13",
+  "days": 365,
+  "horizons": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "currency": "INR",
+  "is_synthetic": true,
+  "capacity": 180,
+  "initial_occupancy": [
+    0.25,
+    0.55
+  ],
+  "bookings_per_day": 2.8,
+  "cancellation_probability": 0.004,
+  "near_departure_boost": 2.2,
+  "early_premium": 0.1,
+  "noise_sigma": 0.09,
+  "rho": 0.85,
+  "hold_probability": 0.32,
+  "no_offer_probability": 0.008,
+  "weekend_multiplier": 1.07,
+  "weekend_days": [
+    5,
+    6
+  ],
+  "price_bounds": [
+    1800,
+    35000
+  ],
+  "event_cap": 1.6,
+  "monthly": [
+    1.05,
+    1,
+    0.98,
+    1.02,
+    1.08,
+    1.04,
+    0.93,
+    0.96,
+    1,
+    1.08,
+    1.07,
+    1.12
+  ],
+  "failures": {
+    "TIMEOUT": 0.012,
+    "SOURCE_BLOCKED": 0.002,
+    "PARSE_ERROR": 0.003,
+    "RATE_LIMITED": 0.003
+  },
+  "airlines": {
+    "6E": 1,
+    "AI": 1.1,
+    "IX": 0.96,
+    "QP": 0.98,
+    "SG": 0.95
+  },
+  "routes": {
+    "BOM-DEL": {
+      "baseline": 5200,
+      "duration_minutes": 130
+    },
+    "DEL-BOM": {
+      "baseline": 5350,
+      "duration_minutes": 130
+    },
+    "BLR-DEL": {
+      "baseline": 6400,
+      "duration_minutes": 170
+    },
+    "DEL-BLR": {
+      "baseline": 6250,
+      "duration_minutes": 170
+    },
+    "BLR-BOM": {
+      "baseline": 4200,
+      "duration_minutes": 110
+    },
+    "BOM-BLR": {
+      "baseline": 4300,
+      "duration_minutes": 110
+    },
+    "CCU-DEL": {
+      "baseline": 5100,
+      "duration_minutes": 145
+    },
+    "DEL-CCU": {
+      "baseline": 5250,
+      "duration_minutes": 145
+    },
+    "DEL-HYD": {
+      "baseline": 5300,
+      "duration_minutes": 135
+    },
+    "HYD-DEL": {
+      "baseline": 5200,
+      "duration_minutes": 135
+    },
+    "DEL-PNQ": {
+      "baseline": 4900,
+      "duration_minutes": 125
+    },
+    "PNQ-DEL": {
+      "baseline": 5000,
+      "duration_minutes": 125
+    },
+    "AMD-DEL": {
+      "baseline": 3600,
+      "duration_minutes": 95
+    },
+    "DEL-AMD": {
+      "baseline": 3750,
+      "duration_minutes": 95
+    },
+    "BLR-PNQ": {
+      "baseline": 4100,
+      "duration_minutes": 100
+    },
+    "PNQ-BLR": {
+      "baseline": 4200,
+      "duration_minutes": 100
+    },
+    "BOM-HYD": {
+      "baseline": 3500,
+      "duration_minutes": 90
+    },
+    "HYD-BOM": {
+      "baseline": 3600,
+      "duration_minutes": 90
+    },
+    "BOM-MAA": {
+      "baseline": 4600,
+      "duration_minutes": 120
+    },
+    "MAA-BOM": {
+      "baseline": 4700,
+      "duration_minutes": 120
+    },
+    "DEL-PAT": {
+      "baseline": 5600,
+      "duration_minutes": 105
+    },
+    "PAT-DEL": {
+      "baseline": 5450,
+      "duration_minutes": 105
+    },
+    "DEL-GOI": {
+      "baseline": 6100,
+      "duration_minutes": 155
+    },
+    "GOI-DEL": {
+      "baseline": 5950,
+      "duration_minutes": 155
+    }
+  },
+  "services": [
+    {
+      "route": "BOM-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-100",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BOM-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-101",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BOM-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-100",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BOM-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-101",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-BOM",
+      "airline": "6E",
+      "flight_number": "SIM-6E-102",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-BOM",
+      "airline": "6E",
+      "flight_number": "SIM-6E-103",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-BOM",
+      "airline": "AI",
+      "flight_number": "SIM-AI-102",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-BOM",
+      "airline": "AI",
+      "flight_number": "SIM-AI-103",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BLR-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-104",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BLR-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-105",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BLR-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-104",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BLR-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-105",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-BLR",
+      "airline": "6E",
+      "flight_number": "SIM-6E-106",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-BLR",
+      "airline": "6E",
+      "flight_number": "SIM-6E-107",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-BLR",
+      "airline": "AI",
+      "flight_number": "SIM-AI-106",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-BLR",
+      "airline": "AI",
+      "flight_number": "SIM-AI-107",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BLR-BOM",
+      "airline": "6E",
+      "flight_number": "SIM-6E-108",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BLR-BOM",
+      "airline": "6E",
+      "flight_number": "SIM-6E-109",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BLR-BOM",
+      "airline": "AI",
+      "flight_number": "SIM-AI-108",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BLR-BOM",
+      "airline": "AI",
+      "flight_number": "SIM-AI-109",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BOM-BLR",
+      "airline": "6E",
+      "flight_number": "SIM-6E-110",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BOM-BLR",
+      "airline": "6E",
+      "flight_number": "SIM-6E-111",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BOM-BLR",
+      "airline": "AI",
+      "flight_number": "SIM-AI-110",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BOM-BLR",
+      "airline": "AI",
+      "flight_number": "SIM-AI-111",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "CCU-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-112",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "CCU-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-113",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "CCU-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-112",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "CCU-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-113",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-CCU",
+      "airline": "6E",
+      "flight_number": "SIM-6E-114",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-CCU",
+      "airline": "6E",
+      "flight_number": "SIM-6E-115",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-CCU",
+      "airline": "AI",
+      "flight_number": "SIM-AI-114",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-CCU",
+      "airline": "AI",
+      "flight_number": "SIM-AI-115",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-HYD",
+      "airline": "6E",
+      "flight_number": "SIM-6E-116",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-HYD",
+      "airline": "6E",
+      "flight_number": "SIM-6E-117",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-HYD",
+      "airline": "AI",
+      "flight_number": "SIM-AI-116",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-HYD",
+      "airline": "AI",
+      "flight_number": "SIM-AI-117",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "HYD-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-118",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "HYD-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-119",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "HYD-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-118",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "HYD-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-119",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-PNQ",
+      "airline": "6E",
+      "flight_number": "SIM-6E-120",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-PNQ",
+      "airline": "6E",
+      "flight_number": "SIM-6E-121",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-PNQ",
+      "airline": "AI",
+      "flight_number": "SIM-AI-120",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-PNQ",
+      "airline": "AI",
+      "flight_number": "SIM-AI-121",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "PNQ-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-122",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "PNQ-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-123",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "PNQ-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-122",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "PNQ-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-123",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "AMD-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-124",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "AMD-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-125",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "AMD-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-124",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "AMD-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-125",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-AMD",
+      "airline": "6E",
+      "flight_number": "SIM-6E-126",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-AMD",
+      "airline": "6E",
+      "flight_number": "SIM-6E-127",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-AMD",
+      "airline": "AI",
+      "flight_number": "SIM-AI-126",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-AMD",
+      "airline": "AI",
+      "flight_number": "SIM-AI-127",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BLR-PNQ",
+      "airline": "6E",
+      "flight_number": "SIM-6E-128",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BLR-PNQ",
+      "airline": "6E",
+      "flight_number": "SIM-6E-129",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BLR-PNQ",
+      "airline": "AI",
+      "flight_number": "SIM-AI-128",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BLR-PNQ",
+      "airline": "AI",
+      "flight_number": "SIM-AI-129",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "PNQ-BLR",
+      "airline": "6E",
+      "flight_number": "SIM-6E-130",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "PNQ-BLR",
+      "airline": "6E",
+      "flight_number": "SIM-6E-131",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "PNQ-BLR",
+      "airline": "AI",
+      "flight_number": "SIM-AI-130",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "PNQ-BLR",
+      "airline": "AI",
+      "flight_number": "SIM-AI-131",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BOM-HYD",
+      "airline": "6E",
+      "flight_number": "SIM-6E-132",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BOM-HYD",
+      "airline": "6E",
+      "flight_number": "SIM-6E-133",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BOM-HYD",
+      "airline": "AI",
+      "flight_number": "SIM-AI-132",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BOM-HYD",
+      "airline": "AI",
+      "flight_number": "SIM-AI-133",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "HYD-BOM",
+      "airline": "6E",
+      "flight_number": "SIM-6E-134",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "HYD-BOM",
+      "airline": "6E",
+      "flight_number": "SIM-6E-135",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "HYD-BOM",
+      "airline": "AI",
+      "flight_number": "SIM-AI-134",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "HYD-BOM",
+      "airline": "AI",
+      "flight_number": "SIM-AI-135",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BOM-MAA",
+      "airline": "6E",
+      "flight_number": "SIM-6E-136",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BOM-MAA",
+      "airline": "6E",
+      "flight_number": "SIM-6E-137",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BOM-MAA",
+      "airline": "AI",
+      "flight_number": "SIM-AI-136",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "BOM-MAA",
+      "airline": "AI",
+      "flight_number": "SIM-AI-137",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "MAA-BOM",
+      "airline": "6E",
+      "flight_number": "SIM-6E-138",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "MAA-BOM",
+      "airline": "6E",
+      "flight_number": "SIM-6E-139",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "MAA-BOM",
+      "airline": "AI",
+      "flight_number": "SIM-AI-138",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "MAA-BOM",
+      "airline": "AI",
+      "flight_number": "SIM-AI-139",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-PAT",
+      "airline": "6E",
+      "flight_number": "SIM-6E-140",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-PAT",
+      "airline": "6E",
+      "flight_number": "SIM-6E-141",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-PAT",
+      "airline": "AI",
+      "flight_number": "SIM-AI-140",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-PAT",
+      "airline": "AI",
+      "flight_number": "SIM-AI-141",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "PAT-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-142",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "PAT-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-143",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "PAT-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-142",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "PAT-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-143",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-GOI",
+      "airline": "6E",
+      "flight_number": "SIM-6E-144",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-GOI",
+      "airline": "6E",
+      "flight_number": "SIM-6E-145",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "DEL-GOI",
+      "airline": "AI",
+      "flight_number": "SIM-AI-144",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "DEL-GOI",
+      "airline": "AI",
+      "flight_number": "SIM-AI-145",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "GOI-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-146",
+      "local_time": "06:30",
+      "time_factor": 1.06
+    },
+    {
+      "route": "GOI-DEL",
+      "airline": "6E",
+      "flight_number": "SIM-6E-147",
+      "local_time": "18:30",
+      "time_factor": 0.98
+    },
+    {
+      "route": "GOI-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-146",
+      "local_time": "11:00",
+      "time_factor": 1.06
+    },
+    {
+      "route": "GOI-DEL",
+      "airline": "AI",
+      "flight_number": "SIM-AI-147",
+      "local_time": "22:00",
+      "time_factor": 0.98
+    },
+    {
+      "route": "BLR-DEL",
+      "airline": "IX",
+      "flight_number": "SIM-IX-300",
+      "local_time": "14:00",
+      "time_factor": 1.0
+    },
+    {
+      "route": "BLR-BOM",
+      "airline": "IX",
+      "flight_number": "SIM-IX-301",
+      "local_time": "09:30",
+      "time_factor": 1.0
+    },
+    {
+      "route": "BOM-DEL",
+      "airline": "QP",
+      "flight_number": "SIM-QP-302",
+      "local_time": "15:00",
+      "time_factor": 1.0
+    },
+    {
+      "route": "BLR-PNQ",
+      "airline": "QP",
+      "flight_number": "SIM-QP-303",
+      "local_time": "20:00",
+      "time_factor": 1.0
+    },
+    {
+      "route": "BOM-DEL",
+      "airline": "SG",
+      "flight_number": "SIM-SG-304",
+      "local_time": "08:00",
+      "time_factor": 1.0
+    },
+    {
+      "route": "AMD-DEL",
+      "airline": "SG",
+      "flight_number": "SIM-SG-305",
+      "local_time": "16:00",
+      "time_factor": 1.0
+    }
+  ],
+  "events": [
+    {
+      "name": "Dussehra",
+      "date": "2025-10-02",
+      "routes": [
+        "CCU-DEL",
+        "BLR-DEL",
+        "DEL-HYD"
+      ],
+      "pre_days": 5,
+      "post_days": 2,
+      "multiplier": 1.22,
+      "date_source": "CAL2025",
+      "effect_provenance": "ENGINEERING_ASSUMPTION"
+    },
+    {
+      "name": "Diwali",
+      "date": "2025-10-20",
+      "routes": [
+        "BOM-DEL",
+        "DEL-BOM",
+        "BLR-DEL",
+        "DEL-BLR",
+        "BLR-BOM",
+        "BOM-BLR",
+        "CCU-DEL",
+        "DEL-CCU",
+        "DEL-HYD",
+        "HYD-DEL",
+        "DEL-PNQ",
+        "PNQ-DEL",
+        "AMD-DEL",
+        "DEL-AMD",
+        "BLR-PNQ",
+        "PNQ-BLR",
+        "BOM-HYD",
+        "HYD-BOM",
+        "BOM-MAA",
+        "MAA-BOM",
+        "DEL-PAT",
+        "PAT-DEL",
+        "DEL-GOI",
+        "GOI-DEL"
+      ],
+      "pre_days": 5,
+      "post_days": 2,
+      "multiplier": 1.22,
+      "date_source": "CAL2025",
+      "effect_provenance": "ENGINEERING_ASSUMPTION"
+    },
+    {
+      "name": "Christmas",
+      "date": "2025-12-25",
+      "routes": [
+        "BOM-DEL",
+        "DEL-BOM",
+        "BLR-DEL",
+        "DEL-BLR",
+        "BLR-BOM",
+        "BOM-BLR",
+        "CCU-DEL",
+        "DEL-CCU",
+        "DEL-HYD",
+        "HYD-DEL",
+        "DEL-PNQ",
+        "PNQ-DEL",
+        "AMD-DEL",
+        "DEL-AMD",
+        "BLR-PNQ",
+        "PNQ-BLR",
+        "BOM-HYD",
+        "HYD-BOM",
+        "BOM-MAA",
+        "MAA-BOM",
+        "DEL-PAT",
+        "PAT-DEL",
+        "DEL-GOI",
+        "GOI-DEL"
+      ],
+      "pre_days": 5,
+      "post_days": 2,
+      "multiplier": 1.22,
+      "date_source": "CAL2025",
+      "effect_provenance": "ENGINEERING_ASSUMPTION"
+    },
+    {
+      "name": "Republic Day",
+      "date": "2026-01-26",
+      "routes": [
+        "BOM-DEL",
+        "DEL-BOM",
+        "BLR-DEL",
+        "DEL-BLR",
+        "BLR-BOM",
+        "BOM-BLR",
+        "CCU-DEL",
+        "DEL-CCU",
+        "DEL-HYD",
+        "HYD-DEL",
+        "DEL-PNQ",
+        "PNQ-DEL",
+        "AMD-DEL",
+        "DEL-AMD",
+        "BLR-PNQ",
+        "PNQ-BLR",
+        "BOM-HYD",
+        "HYD-BOM",
+        "BOM-MAA",
+        "MAA-BOM",
+        "DEL-PAT",
+        "PAT-DEL",
+        "DEL-GOI",
+        "GOI-DEL"
+      ],
+      "pre_days": 5,
+      "post_days": 2,
+      "multiplier": 1.22,
+      "date_source": "CAL2026",
+      "effect_provenance": "ENGINEERING_ASSUMPTION"
+    },
+    {
+      "name": "Holi",
+      "date": "2026-03-04",
+      "routes": [
+        "BOM-DEL",
+        "BLR-DEL",
+        "CCU-DEL",
+        "AMD-DEL"
+      ],
+      "pre_days": 5,
+      "post_days": 2,
+      "multiplier": 1.22,
+      "date_source": "CAL2026",
+      "effect_provenance": "ENGINEERING_ASSUMPTION"
+    },
+    {
+      "name": "Independence Day",
+      "date": "2026-08-15",
+      "routes": [
+        "BOM-DEL",
+        "DEL-BOM",
+        "BLR-DEL",
+        "DEL-BLR",
+        "BLR-BOM",
+        "BOM-BLR",
+        "CCU-DEL",
+        "DEL-CCU",
+        "DEL-HYD",
+        "HYD-DEL",
+        "DEL-PNQ",
+        "PNQ-DEL",
+        "AMD-DEL",
+        "DEL-AMD",
+        "BLR-PNQ",
+        "PNQ-BLR",
+        "BOM-HYD",
+        "HYD-BOM",
+        "BOM-MAA",
+        "MAA-BOM",
+        "DEL-PAT",
+        "PAT-DEL",
+        "DEL-GOI",
+        "GOI-DEL"
+      ],
+      "pre_days": 5,
+      "post_days": 2,
+      "multiplier": 1.22,
+      "date_source": "CAL2026",
+      "effect_provenance": "ENGINEERING_ASSUMPTION"
+    },
+    {
+      "name": "Gandhi Jayanti",
+      "date": "2026-10-02",
+      "routes": [
+        "BOM-DEL",
+        "DEL-BOM",
+        "BLR-DEL",
+        "DEL-BLR",
+        "BLR-BOM",
+        "BOM-BLR",
+        "CCU-DEL",
+        "DEL-CCU",
+        "DEL-HYD",
+        "HYD-DEL",
+        "DEL-PNQ",
+        "PNQ-DEL",
+        "AMD-DEL",
+        "DEL-AMD",
+        "BLR-PNQ",
+        "PNQ-BLR",
+        "BOM-HYD",
+        "HYD-BOM",
+        "BOM-MAA",
+        "MAA-BOM",
+        "DEL-PAT",
+        "PAT-DEL",
+        "DEL-GOI",
+        "GOI-DEL"
+      ],
+      "pre_days": 5,
+      "post_days": 2,
+      "multiplier": 1.22,
+      "date_source": "CAL2026",
+      "effect_provenance": "ENGINEERING_ASSUMPTION"
+    },
+    {
+      "name": "Dussehra",
+      "date": "2026-10-20",
+      "routes": [
+        "CCU-DEL",
+        "BLR-DEL",
+        "DEL-HYD"
+      ],
+      "pre_days": 5,
+      "post_days": 2,
+      "multiplier": 1.22,
+      "date_source": "CAL2026",
+      "effect_provenance": "ENGINEERING_ASSUMPTION"
+    }
+  ],
+  "provenance_default": "ENGINEERING_ASSUMPTION"
+}
