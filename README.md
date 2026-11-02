@@ -1,7 +1,7 @@
 ## 🌐 Live Demo
 
  # Landing Page
-**https://skymetrics-5tmg.onrender.com/**
+**https://skymetrics-current.onrender.com**
 
 **⚠️ Warning: The landing page currently provides access to the User Section only. The Government Section must be accessed through its separate URL provided under login section.**
  
@@ -10,14 +10,12 @@
 The app has two login options:
  
 - **User Login**
-- https://skymetrics-5tmg.onrender.com/users
-- User email: sky-review-traveller@example.com
-- User password: jeT41tzialrxDGHB6O_ugKI9B_6LLk4r
+- https://skymetrics-current.onrender.com
 <br> <br>
 - **Government Login**
-- https://skymetrics-5tmg.onrender.com/government
-- Government email: sky-review-analyst@example.com
-- Government password: 0NWJxevEDN6czf0YKSEXCij8WpJ-LEtV
+- https://skymetrics-current.onrender.com/government
+- Government email: governmentofficial@gmail.com
+- Government password: sihprojectpasswordforgovernment
 
 
 # SkyMetrics Platform
