@@ -1,0 +1,36 @@
+name: Keep Render service awake
+
+on:
+  # GitHub Actions scheduled workflows use UTC. Every 10 minutes keeps this
+  # service active before Render's typical 15-minute idle timeout.
+  schedule:
+    - cron: "7,17,27,37,47,57 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Ping the Render service
+        env:
+          RENDER_URL: https://skymetrics-current.onrender.com/
+        run: |
+          set -Eeuo pipefail
+
+          # Fails for HTTP 4xx/5xx. Retries handle a cold start or network hiccup.
+          curl \
+            --fail \
+            --show-error \
+            --silent \
+            --location \
+            --connect-timeout 20 \
+            --max-time 90 \
+            --retry 3 \
+            --retry-all-errors \
+            --retry-delay 10 \
+            --output /dev/null \
+            "$RENDER_URL"
